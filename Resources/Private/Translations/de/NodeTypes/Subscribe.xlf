@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="DirectMail.Newsletter" source-language="de" datatype="plaintext">
+		<body>
+			<trans-unit id="ui.label" xml:space="preserve">
+				<source>Newsletter Anmeldung</source>
+			</trans-unit>
+			<trans-unit id="properties.category" xml:space="preserve">
+            	<source>Empfängerliste</source>
+            </trans-unit>
+            <trans-unit id="content.gender" xml:space="preserve">
+                <source>Anrede</source>
+            </trans-unit>
+            <trans-unit id="content.firstname" xml:space="preserve">
+                <source>Vorname</source>
+            </trans-unit>
+            <trans-unit id="content.lastname" xml:space="preserve">
+                <source>Nachname</source>
+            </trans-unit>
+            <trans-unit id="content.email" xml:space="preserve">
+                <source>E-Mail</source>
+            </trans-unit>
+            <trans-unit id="content.subscribebutton" xml:space="preserve">
+                <source>Abonnieren</source>
+            </trans-unit>
+
+            <trans-unit id="content.genderman" xml:space="preserve">
+                <source>Herr</source>
+            </trans-unit>
+            <trans-unit id="content.genderwoman" xml:space="preserve">
+                <source>Frau</source>
+            </trans-unit>
+            <trans-unit id="content.genderfam" xml:space="preserve">
+                <source>Familie</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

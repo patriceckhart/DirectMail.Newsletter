@@ -1,0 +1,41 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Title">Kategorien</f:section>
+<f:section name="Content">
+    <f:if condition="{categories}">
+        <f:then>
+            <table class="neos-table">
+                <thead>
+                <tr>
+                    <td>Kategorie</td>
+                    <td>&nbsp;</td>
+                </tr>
+                </thead>
+                <tbody>
+                <f:for each="{categories}" as="category">
+                    <f:if condition="{category.deleted}==0">
+                    <tr>
+                        <td>{category.name}</td>
+                        <td class="neos-action">
+                            <div class="neos-pull-right">
+                                <f:form action="delete" arguments="{category: category}">
+                                    <f:link.action class="neos-button neos-button-primary" action="edit" arguments="{category: category}"><i class="icon-pencil icon-white"></i></f:link.action>
+                                    <button type="submit" class="neos-button neos-button-danger"><i class="icon-remove"></i></button>
+                                </f:form>
+                            </div>
+                        </td>
+                    </tr>
+                    </f:if>
+                </f:for>
+                </tbody>
+            </table>
+        </f:then>
+        <f:else>
+            <br />Keine Kategorien verfügbar.
+        </f:else>
+    </f:if>
+    <div class="neos-footer">
+        <f:link.action class="neos-button neos-button-primary" action="new">Neuen Kategorie anlegen</f:link.action>
+    </div>
+</f:section>

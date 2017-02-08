@@ -1,0 +1,34 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Title">Newsletter senden</f:section>
+<f:section name="Content">
+    <table class="neos-table">
+        <thead>
+        <tr>
+            <td>Seite</td>
+            <td>URL</td>
+            <td>&nbsp;</td>
+        </tr>
+        </thead>
+        <tbody>
+        <f:for each="{nodes}" as="node">
+            <f:if condition="{node.properties.layout} == 'newsletter'">
+                <tr>
+                    <td>{node.properties.title}</td>
+                    <td>{hostname}{node.properties.uriPathSegment}.html</td>
+                    <td class="neos-action">
+                        <div class="neos-pull-right">
+                            <f:form action="send" objectName="newSend" controller="Send">
+                                <f:form.hidden property="pageurl" value="{node.properties.uriPathSegment}" />
+                                <f:form.hidden property="title" value="{node.properties.title}" />
+                                <button type="submit" class="neos-button neos-button-primary"><i class="icon-ok"></i></button>
+                            </f:form>
+                        </div>
+                    </td>
+                </tr>
+            </f:if>
+        </f:for>
+        </tbody>
+    </table>
+</f:section>

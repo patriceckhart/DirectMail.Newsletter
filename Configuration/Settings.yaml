@@ -1,0 +1,73 @@
+Neos:
+  Neos:
+    nodeTypes:
+      groups:
+        newsletter:
+          position: 'start'
+          label: 'DirectMail Newsletter'
+    fusion:
+      autoInclude:
+        DirectMail.Newsletter: true
+    userInterface:
+      translation:
+        autoInclude:
+          DirectMail.Newsletter:
+            - Main
+            - 'NodeTypes/*'
+    modules:
+      directMailNewsletter:
+        label: 'DirectMail Newsletter'
+        controller: '\Neos\Neos\Controller\Module\ManagementController'
+        description: 'DirectMail Newsletter Admin'
+        icon: 'icon-envelope'
+        resource: 'Neos_Neos_Backend_Module_Management'
+        submodules:
+          Recipients:
+            label: 'Empfänger'
+            controller: '\DirectMail\Newsletter\Controller\RecipientController'
+            description: 'Mit diesem Modul, können Sie Empfänger bearbeiten.'
+            icon: 'icon-user'
+            actions:
+              index:
+                label: 'Empfänger bearbeiten'
+                title: 'Empfänger bearbeiten'
+          Categories:
+            label: 'Kategorien'
+            controller: '\DirectMail\Newsletter\Controller\CategoryController'
+            description: 'Mit diesem Modul, können Sie Kategorien bearbeiten.'
+            icon: 'icon-th-list'
+            actions:
+              index:
+                label: 'Kategorien bearbeiten'
+                title: 'Kategorien bearbeiten'
+          Send:
+            label: 'Newsletter senden'
+            controller: '\DirectMail\Newsletter\Controller\SendController'
+            description: 'Mit diesem Modul, können Sie Newsletter Seiten versenden.'
+            icon: 'icon-mail-forward'
+            actions:
+              index:
+                label: 'Newsletter senden'
+                title: 'Newsletter senden'
+          Queue:
+            label: 'Warteschlange'
+            controller: '\DirectMail\Newsletter\Controller\QueueController'
+            description: 'Mit diesem Modul, können Sie Warteschlange einsehen.'
+            icon: 'icon-time'
+            actions:
+              index:
+                label: 'Warteschlange'
+                title: 'Warteschlange'
+DirectMail:
+  Newsletter:
+    adminName: 'Admin Name'
+    adminMail: 'postmaster@domain.com'
+    replyToMail: 'reply@domain.com'
+    replyToName: 'Reply Name'
+    subscribeSubject: 'Newsletter Anmeldung'
+    subscribeBody: '<h2>Vielen Dank für Ihr Interesse!</h2> <p>Es freut uns sehr, dass Sie sich für den Erhalt unseres Newsletter registriert haben.</p> <p>Falls Sie sich nicht oder irrtümlich registriert haben, können Sie Ihre Registrierung mit Klick auf den folgenden Link widerrufen.</p>'
+    subscribeFooter: '<p>Beste Grüße<br />Ihr Newsletter Team</p>'
+    unsubscribeButtonText: 'Registrierung widerrufen!'
+    unsubscribeLink: 'http://neos3dev.patriceckhart.com/unsubscribe.html'
+    senderName: 'Mail Name'
+    senderMail: 'newsletter@domain.com'

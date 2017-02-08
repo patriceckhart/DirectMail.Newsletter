@@ -1,0 +1,7 @@
+prototype(DirectMail.Newsletter:Subscribe) < prototype(Neos.Neos:Plugin)
+prototype(DirectMail.Newsletter:Subscribe) {
+    package = 'DirectMail.Newsletter'
+    controller = 'Recipient'
+    action = 'subscribe'
+    category = ${q(node).property('category')}
+}

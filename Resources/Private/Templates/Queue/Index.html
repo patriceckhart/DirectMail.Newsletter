@@ -1,0 +1,60 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Title">Warteschlange</f:section>
+<f:section name="Content">
+    <f:if condition="{queues}">
+        <f:then>
+            <table class="neos-table">
+                <thead>
+                <tr>
+                    <td>Seite</td>
+                    <td>URL</td>
+                    <td>Versand</td>
+                    <td>Status</td>
+                    <td>&nbsp;</td>
+                </tr>
+                </thead>
+                <tbody>
+                <f:for each="{queues}" as="queue">
+                    <tr>
+                        <td>{queue.title}</td>
+                        <td>{queue.pageurl}</td>
+                        <td>{queue.posted}</td>
+                        <td>
+                            <f:if condition="{queue.quantity}=={queue.posted}">
+                                <f:then>
+                                    Fertig
+                                </f:then>
+                                <f:else>
+                                    Ausstehend
+                                </f:else>
+                            </f:if>
+                        </td>
+                        <td class="neos-action">
+                            <div class="neos-pull-right">
+                                <f:if condition="{queue.quantity}=={queue.posted}">
+                                    <f:then>
+
+                                    </f:then>
+                                    <f:else>
+                                        <f:form action="delete" arguments="{queue: queue}">
+                                            <button type="submit" class="neos-button neos-button-danger"><i class="icon-remove"></i></button>
+                                        </f:form>
+                                    </f:else>
+                                </f:if>
+                            </div>
+                        </td>
+                    </tr>
+                </f:for>
+                </tbody>
+            </table>
+            <div class="neos-footer">
+                <!--<f:link.action class="neos-button neos-button-primary" action="send" controller="status">Versand anstoßen</f:link.action>-->
+            </div>
+        </f:then>
+        <f:else>
+            Die Warteschlange ist leer
+        </f:else>
+    </f:if>
+</f:section>

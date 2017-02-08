@@ -1,0 +1,26 @@
+include: NodeTypes/*
+newsletter = Page
+newsletter {
+    head {
+        metadata = Neos.Fusion:Template  {
+            templatePath = 'resource://DirectMail.Newsletter/Private/Templates/Page/Newsletter.html'
+            sectionName = 'metadata'
+        }
+
+        titleTag {
+            content = Neos.Fusion:Collection {
+                @process.siteName = ${q(node).property('title') + (nodeIterator.isLast ? '' : '')}
+            }
+        }
+    }
+    body {
+        templatePath = 'resource://DirectMail.Newsletter/Private/Templates/Page/Newsletter.html'
+        sectionName = 'body'
+
+        content {
+            main = Neos.Neos:PrimaryContent {
+                nodePath = 'main'
+            }
+        }
+    }
+}

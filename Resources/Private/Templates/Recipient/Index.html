@@ -1,0 +1,79 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Title">Empfänger</f:section>
+<f:section name="Content">
+    <f:if condition="{recipients}">
+        <f:then>
+            <table class="neos-table">
+                <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>E-Mail</td>
+                    <td>Anrede</td>
+                    <td>Kategorie</td>
+                    <td>Status</td>
+                    <td>&nbsp;</td>
+                </tr>
+                </thead>
+                <tbody>
+                <f:for each="{recipients}" as="recipient">
+                    <tr>
+                        <td>{recipient.firstname} {recipient.lastname}</td>
+                        <td>{recipient.email}</td>
+                        <td>
+                            <f:if condition="{recipient.gender}==1">
+                                <f:then>Herr</f:then><f:else></f:else>
+                            </f:if>
+                            <f:if condition="{recipient.gender}==2">
+                                <f:then>Frau</f:then><f:else></f:else>
+                            </f:if>
+                            <f:if condition="{recipient.gender}==3">
+                                <f:then>Familie</f:then><f:else></f:else>
+                            </f:if>
+                        <td>
+                        <f:for each="{categories}" as="category">
+                            <f:if condition="{recipient.category}==<f:format.identifier>{category}</f:format.identifier>">{category.name}</f:if>
+                        </f:for>
+                        </td>
+                        <td>
+                            <f:if condition="{recipient.deleted}==0">
+                                <f:then>
+                                    Aktiv
+                                </f:then>
+                                <f:else>
+                                    Inaktiv
+                                </f:else>
+                            </f:if>
+                        </td>
+                        <td class="neos-action">
+                            <div class="neos-pull-right">
+                                <f:if condition="{recipient.deleted}==1">
+                                    <f:then>
+                                        <f:form action="activate" arguments="{recipient: recipient}">
+                                            <button type="submit" class="neos-button neos-button-danger"><i class="icon-ok"></i></button>
+                                        </f:form>
+                                    </f:then>
+                                    <f:else>
+                                        <f:form action="hide" arguments="{recipient: recipient}">
+                                            <f:link.action class="neos-button neos-button-primary" action="edit" arguments="{recipient: recipient}"><i class="icon-pencil icon-white"></i></f:link.action>
+                                            <button type="submit" class="neos-button neos-button-danger"><i class="icon-ban-circle"></i></button>
+                                        </f:form>
+                                    </f:else>
+                                </f:if>
+                            </div>
+                        </td>
+                    </tr>
+                </f:for>
+                </tbody>
+            </table>
+        </f:then>
+        <f:else>
+            <br />Keine Empfänger verfügbar.
+        </f:else>
+    </f:if>
+    <div class="neos-footer">
+        <f:link.action class="neos-button neos-button-primary" action="new">Neuen Empfänger anlegen</f:link.action>
+        <f:link.action class="neos-button neos-button-primary" action="import">Empfängerliste importieren</f:link.action>
+    </div>
+</f:section>

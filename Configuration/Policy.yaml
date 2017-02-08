@@ -1,0 +1,26 @@
+privilegeTargets:
+  Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege:
+    'DirectMail.Newsletter:CategoryControllerActions':
+      matcher: 'method(DirectMail\Newsletter\Controller\CategoryController->.*Action())'
+    'DirectMail.Newsletter:QueueControllerActions':
+      matcher: 'method(DirectMail\Newsletter\Controller\QueueController->.*Action())'
+    'DirectMail.Newsletter:RecipientControllerActions':
+      matcher: 'method(DirectMail\Newsletter\Controller\RecipientController->.*Action())'
+    'DirectMail.Newsletter:SendControllerActions':
+      matcher: 'method(DirectMail\Newsletter\Controller\SendController->.*Action())'
+
+roles:
+  'Neos.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'DirectMail.Newsletter:CategoryControllerActions'
+        permission: GRANT
+      -
+        privilegeTarget: 'DirectMail.Newsletter:QueueControllerActions'
+        permission: GRANT
+      -
+        privilegeTarget: 'DirectMail.Newsletter:RecipientControllerActions'
+        permission: GRANT
+      -
+        privilegeTarget: 'DirectMail.Newsletter:SendControllerActions'
+        permission: GRANT

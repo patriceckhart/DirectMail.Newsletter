@@ -1,0 +1,32 @@
+<f:layout name="Default" />
+
+<f:section name="Title">Kategorie auswählen</f:section>
+
+<f:section name="Content">
+    Seite: {title} ({hostname}{pageUrl})
+    <table class="neos-table">
+        <thead>
+        <tr>
+            <td>Kategorie</td>
+            <td>&nbsp;</td>
+        </tr>
+        </thead>
+        <tbody>
+        <f:for each="{categories}" as="category">
+            <f:if condition="{category.deleted}==0">
+                <f:then>
+                    <tr><td>{category.name}</td><td class="neos-action"><div class="neos-pull-right">
+                        <f:form action="finish" controller="Send" objectName="newSend">
+                            <f:form.hidden property="pageurl" value="{fullUrl}" />
+                            <f:form.hidden property="title" value="{title}" />
+                            <f:form.hidden property="category" value="<f:format.identifier>{category}</f:format.identifier>" />
+                            <f:form.hidden property="done" value="0" />
+                            <button type="submit" class="neos-button neos-button-primary">Newsletter jetzt senden</button>
+                        </f:form>
+                    </div></td></tr>
+                </f:then>
+            </f:if>
+        </f:for>
+        </tbody>
+    </table>
+</f:section>

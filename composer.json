@@ -1,0 +1,18 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "directmail/newsletter",
+    "require": {
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DirectMail\\Newsletter\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "DirectMail.Newsletter"
+        }
+    }
+}

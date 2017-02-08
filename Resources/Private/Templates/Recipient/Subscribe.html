@@ -1,0 +1,34 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Content">
+    <f:form action="create" objectName="newRecipient" controller="Recipient">
+        <ol>
+            <li>
+                <label for="gender">{f:translate(id: 'content.gender', package: 'DirectMail.Newsletter', source: 'NodeTypes/Subscribe')}</label>
+                <select name="--directmail_newsletter-subscribe[newRecipient][gender]" id="gender">
+                    <option value="1">{f:translate(id: 'content.genderman', package: 'DirectMail.Newsletter', source: 'NodeTypes/Subscribe')}</option>
+                    <option value="2">{f:translate(id: 'content.genderwoman', package: 'DirectMail.Newsletter', source: 'NodeTypes/Subscribe')}</option>
+                    <option value="3">{f:translate(id: 'content.genderfam', package: 'DirectMail.Newsletter', source: 'NodeTypes/Subscribe')}</option>
+                </select>
+            </li>
+            <li>
+                <label for="firstname">{f:translate(id: 'content.firstname', package: 'DirectMail.Newsletter', source: 'NodeTypes/Subscribe')}</label>
+                <f:form.textfield property="firstname" id="firstname" />
+            </li>
+            <li>
+                <label for="lastname">{f:translate(id: 'content.lastname', package: 'DirectMail.Newsletter', source: 'NodeTypes/Subscribe')}</label>
+                <f:form.textfield property="lastname" id="lastname" />
+            </li>
+            <li>
+                <label for="email">{f:translate(id: 'content.email', package: 'DirectMail.Newsletter', source: 'NodeTypes/Subscribe')}</label>
+                <f:form.textfield property="email" id="email" />
+            </li>
+            <li>
+                <f:form.submit value="{f:translate(id: 'content.subscribebutton', package: 'DirectMail.Newsletter', source: 'NodeTypes/Subscribe')}" />
+            </li>
+            <f:form.hidden property="category" id="category" value="{category}" />
+            <f:form.hidden property="deleted" id="deleted" value="0" />
+        </ol>
+    </f:form>
+</f:section>

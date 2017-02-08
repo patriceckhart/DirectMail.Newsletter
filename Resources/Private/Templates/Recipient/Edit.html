@@ -1,0 +1,56 @@
+<f:layout name="Default" />
+
+<f:section name="Title">{recipient.firstname} {recipient.lastname} bearbeiten</f:section>
+
+<f:section name="Content">
+    <br />
+    <f:form action="update" object="{recipient}" objectName="recipient">
+        <div class="neos-content neos-container-fluid">
+
+            <div class="neos-control-group">
+                <label for="email">E-Mail</label>
+                <f:form.textfield property="email" id="email" />
+            </div>
+
+            <div class="neos-control-group">
+                <label for="firstname">Vorname</label>
+                <f:form.textfield property="firstname" id="firstname" />
+            </div>
+
+            <div class="neos-control-group">
+                <label for="firstname">Nachname</label>
+                <f:form.textfield property="lastname" id="lastname" />
+            </div>
+
+            <div class="neos-controls">
+                <label>Anrede</label>
+                <label for="gender1" class="neos-radio">
+                    <f:form.radio property="gender" id="gender1" value="1" /><span></span>
+                    <span>Herr</span>
+                </label>
+                <br />
+                <label for="gender2" class="neos-radio">
+                    <f:form.radio property="gender" id="gender2" value="2" /><span></span>
+                    <span>Frau</span>
+                </label>
+                <br />
+                <label for="gender3" class="neos-radio">
+                    <f:form.radio property="gender" id="gender3" value="3" /><span></span>
+                    <span>Familie</span>
+                </label>
+            </div>
+
+            <div class="neos-control-group">
+                <div class="neos-control-group">
+                    <label class="neos-control-label" for="category">Kategorie</label>
+                    <f:form.select name="category" id="category" property="category" options="{categories}" optionLabelField="name" />
+                </div>
+            </div>
+
+        </div>
+
+        <div class="neos-footer">
+            <f:form.submit class="neos-button neos-button-primary" value="Änderungen speichern" />
+        </div>
+    </f:form>
+</f:section>
