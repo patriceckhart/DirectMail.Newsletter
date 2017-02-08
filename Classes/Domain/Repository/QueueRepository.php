@@ -83,8 +83,6 @@ class QueueRepository extends Repository
                 $this->persistenceManager->persistAll();
             }
 
-
-
             $results2->next();
         }
 

@@ -70,6 +70,9 @@ class SendController extends ActionController
         $classname = '\DirectMail\Newsletter\Domain\Model\Recipient';
         $query = $this->persistenceManager->createQueryForType($classname);
         $results = $query->matching($query->equals('category', $category))->execute();
+        //$results = $query->matching($query->matching($query->logicalOr($constraints))->execute();
+
+
 
         $recipients = count($results);
 
