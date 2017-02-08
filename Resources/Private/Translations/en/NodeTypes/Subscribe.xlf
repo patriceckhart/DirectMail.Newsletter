@@ -6,7 +6,7 @@
 				<source>Newsletter Subscription</source>
 			</trans-unit>
 			<trans-unit id="properties.category" xml:space="preserve">
-                <source>Recipient List</source>
+                <source>Category (Identifier)</source>
             </trans-unit>
             <trans-unit id="content.gender" xml:space="preserve">
                 <source>Salutation</source>
@@ -32,6 +32,9 @@
             </trans-unit>
             <trans-unit id="content.genderfam" xml:space="preserve">
                 <source>Fam.</source>
+            </trans-unit>
+            <trans-unit id="content.chooseidentifier" xml:space="preserve">
+                <source>Define an Identifier in Inspector</source>
             </trans-unit>
 		</body>
 	</file>

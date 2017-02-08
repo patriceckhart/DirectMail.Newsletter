@@ -8,6 +8,7 @@
             <table class="neos-table">
                 <thead>
                 <tr>
+                    <td>Identifier</td>
                     <td>Kategorie</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -16,6 +17,7 @@
                 <f:for each="{categories}" as="category">
                     <f:if condition="{category.deleted}==0">
                     <tr>
+                        <td><f:format.identifier>{category}</f:format.identifier></td>
                         <td>{category.name}</td>
                         <td class="neos-action">
                             <div class="neos-pull-right">

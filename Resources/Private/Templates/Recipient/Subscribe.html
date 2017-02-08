@@ -2,6 +2,8 @@
 {namespace fusion=Neos\Fusion\ViewHelpers}
 <f:layout name="Default" />
 <f:section name="Content">
+    <f:if condition="{category}">
+        <f:then>
     <f:form action="create" objectName="newRecipient" controller="Recipient">
         <ol>
             <li>
@@ -31,4 +33,11 @@
             <f:form.hidden property="deleted" id="deleted" value="0" />
         </ol>
     </f:form>
+        </f:then>
+        <f:else>
+            <ol>
+                <li>{f:translate(id: 'content.chooseidentifier', package: 'DirectMail.Newsletter', source: 'NodeTypes/Subscribe')}</li>
+            </ol>
+        </f:else>
+    </f:if>
 </f:section>
