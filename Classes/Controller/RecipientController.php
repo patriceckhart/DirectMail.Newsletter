@@ -58,7 +58,6 @@ class RecipientController extends ActionController
     public function newAction()
     {
         $this->view->assign('categories', $this->categoryRepository->findAll());
-        $this->redirect('index');
     }
 
     /**
@@ -99,6 +98,17 @@ class RecipientController extends ActionController
 
         $this->addFlashMessage('Vielen Dank für Ihr Interesse!');
         $this->redirect('subscribe');
+
+    }
+
+    /**
+     * @param \DirectMail\Newsletter\Domain\Model\Recipient $newRecipient
+     * @return void
+     */
+    public function addAction($newRecipient) {
+        $this->recipientRepository->add($newRecipient);
+        $this->addFlashMessage('Empfänger angelegt.');
+        $this->redirect('index');
 
     }
 
