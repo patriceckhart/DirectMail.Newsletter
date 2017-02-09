@@ -78,6 +78,7 @@
         nodeTypes:
           'Neos.NodeTypes:Headline': TRUE
           'Neos.NodeTypes:Text': TRUE
+          'Neos.NodeTypes:Html': TRUE
           'Neos.NodeTypes:Image': TRUE
           'Neos.NodeTypes:Column': TRUE
           'Neos.NodeTypes:TwoColumn': TRUE
