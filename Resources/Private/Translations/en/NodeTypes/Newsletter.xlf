@@ -5,6 +5,9 @@
 			<trans-unit id="properties.newsletterBackground" xml:space="preserve">
                 <source>Backgroundcolor</source>
             </trans-unit>
+            <trans-unit id="properties.linkColor" xml:space="preserve">
+                <source>Linkcolor</source>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -18,6 +18,7 @@ newsletter {
         sectionName = 'body'
 
         newsletterBackground = ${q(node).property('newsletterBackground')}
+        linkColor = ${q(node).property('linkColor')}
 
         content {
             main = Neos.Neos:PrimaryContent {

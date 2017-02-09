@@ -16,6 +16,12 @@
             body { background:{newsletterBackground}; }
         </style>
     </f:if>
+    <f:if condition="{linkColor}">
+        <style>
+            body a { color:{linkColor}; text-decoration:underline; }
+            body a:hover { text-decoration:none; }
+        </style>
+    </f:if>
     <f:render partial="InlineCss.html" arguments="{_all}" />
     <div class="newsletter">
         {content.main -> f:format.raw()}
