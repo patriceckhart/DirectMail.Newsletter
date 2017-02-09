@@ -1,0 +1,30 @@
+<f:layout name="Default" />
+
+<f:section name="Title">Neuen Empfänger anlegen</f:section>
+
+<f:section name="Content">
+    <br />
+    <f:form action="importCSV" controller="Recipient" enctype="multipart/form-data">
+        <div class="neos-content neos-container-fluid">
+
+            <div class="neos-control-group">
+                <label for="csvdata">CSV Daten (getrennt mit Semikolon)</label>
+                <f:form.textarea name="csvdata" id="csvdata" style="width:100%; height:30em; padding:14px;" placeholder="Firstname;Lastname;Mail;Gender(1=m/2=w/3=f)"/>
+            </div>
+
+            <div class="neos-control-group">
+                <div class="neos-control-group">
+                    <label class="neos-control-label" for="category">Kategorie</label>
+                    <f:form.select name="category" id="category" property="category" options="{categories}" optionLabelField="name" />
+                </div>
+            </div>
+
+        </div>
+        <div class="neos-footer">
+            <f:form.submit class="neos-button neos-button-primary" value="Empfängerliste importieren" />
+        </div>
+    </f:form>
+</f:section>
+
+
+<f:form.upload name="csvdata" id="csvdata" style="height: 40px; line-height: 36px; border: 2px solid #3f3f3f; background-color: #3f3f3f; color: #fff; font-family: 'Noto Sans', sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; padding: 0 14px; margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;" />

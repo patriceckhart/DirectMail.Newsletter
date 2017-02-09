@@ -187,4 +187,40 @@ class RecipientController extends ActionController
         $this->redirect('index');
     }
 
+    /**
+     * @return void
+     */
+    public function importAction()
+    {
+        $this->view->assign('categories', $this->categoryRepository->findAll());
+    }
+
+    /**
+     * @return void
+     * @param string $csvdata
+     * @param string $category
+     */
+    public function importCSVAction($csvdata,$category)
+    {
+        $recipientlist = $csvdata;
+        $recipientlist = explode("\n", $recipientlist);
+        foreach ($recipientlist as $recipient)
+        {
+            list($firstname, $lastname, $email, $gender) = explode(';', $recipient);
+            $recipientdat = new \DirectMail\Newsletter\Domain\Model\Recipient();
+            $recipientdat->setFirstname($firstname);
+            $recipientdat->setLastname($lastname);
+            $recipientdat->setEmail($email);
+            $recipientdat->setGender($gender);
+
+            $recipientdat->setCategory($category);
+
+            $recipientdat->setDeleted('0');
+
+            $this->recipientRepository->add($recipientdat);
+        }
+
+        $this->redirect('index');
+    }
+
 }
