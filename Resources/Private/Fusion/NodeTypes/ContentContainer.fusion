@@ -1,0 +1,5 @@
+prototype(DirectMail.Newsletter:ContentContainer) {
+    content = ContentCollection {
+        nodePath = 'content'
+    }
+}

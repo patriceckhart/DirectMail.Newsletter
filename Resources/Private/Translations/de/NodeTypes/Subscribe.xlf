@@ -6,7 +6,7 @@
 				<source>Newsletter Anmeldung</source>
 			</trans-unit>
 			<trans-unit id="properties.category" xml:space="preserve">
-            	<source>Kategorie (Identifier)</source>
+                <source>Kategorie (Identifier)</source>
             </trans-unit>
             <trans-unit id="content.gender" xml:space="preserve">
                 <source>Anrede</source>
@@ -21,7 +21,7 @@
                 <source>E-Mail</source>
             </trans-unit>
             <trans-unit id="content.subscribebutton" xml:space="preserve">
-                <source>Abonnieren</source>
+                <source>Anmelden</source>
             </trans-unit>
 
             <trans-unit id="content.genderman" xml:space="preserve">
@@ -34,7 +34,7 @@
                 <source>Familie</source>
             </trans-unit>
             <trans-unit id="content.chooseidentifier" xml:space="preserve">
-                <source>Definieren Sie den Identifier im Inspector</source>
+                <source>Definieren Sie einen Identifier im Inspector</source>
             </trans-unit>
 		</body>
 	</file>

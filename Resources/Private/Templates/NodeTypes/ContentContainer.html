@@ -1,0 +1,7 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace media=Neos\Media\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+<div class="content" style="<f:if condition="{contentContainerPadding}">padding:2em;</f:if> <f:if condition="{contentContainerBackground}">background:{contentContainerBackground};</f:if>">
+    {content -> f:format.raw()}
+</div>
+

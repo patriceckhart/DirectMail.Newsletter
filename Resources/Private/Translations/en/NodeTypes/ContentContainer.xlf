@@ -3,10 +3,13 @@
 	<file original="" product-name="DirectMail.Newsletter" source-language="en" datatype="plaintext">
 		<body>
 			<trans-unit id="ui.label" xml:space="preserve">
-				<source>Newsletter Unsubscription</source>
+				<source>Content Container</source>
 			</trans-unit>
-            <trans-unit id="content.unsubscribebutton" xml:space="preserve">
-                <source>Unsubscribe from Newsletter</source>
+			<trans-unit id="properties.contentContainerBackground" xml:space="preserve">
+                <source>Backgroundcolor</source>
+            </trans-unit>
+            <trans-unit id="properties.contentContainerPadding" xml:space="preserve">
+                <source>Padding</source>
             </trans-unit>
 		</body>
 	</file>

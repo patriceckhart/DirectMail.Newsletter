@@ -17,6 +17,8 @@ newsletter {
         templatePath = 'resource://DirectMail.Newsletter/Private/Templates/Page/Newsletter.html'
         sectionName = 'body'
 
+        newsletterBackground = ${q(node).property('newsletterBackground')}
+
         content {
             main = Neos.Neos:PrimaryContent {
                 nodePath = 'main'

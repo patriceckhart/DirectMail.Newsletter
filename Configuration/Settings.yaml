@@ -12,8 +12,14 @@ Neos:
       translation:
         autoInclude:
           DirectMail.Newsletter:
-            - Main
+            - 'Main'
             - 'NodeTypes/*'
+      inspector:
+        dataTypes:
+          'Neos\Media\Domain\Model\ImageInterface':
+            editorOptions:
+              features:
+                resize: TRUE
     modules:
       directMailNewsletter:
         label: 'DirectMail Newsletter'

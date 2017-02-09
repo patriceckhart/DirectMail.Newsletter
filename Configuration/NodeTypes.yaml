@@ -26,6 +26,10 @@
   childNodes:
     'main':
       type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'DirectMail.Newsletter:ContentContainer': TRUE
+          '*': FALSE
   ui:
     label: 'Newsletter'
     icon: 'icon-envelope'
@@ -37,3 +41,61 @@
     'layout':
       type: string
       defaultValue: 'newsletter'
+    'newsletterBackground':
+      type: string
+      defaultValue: '#EBEBEB'
+      ui:
+        label: 'Hintergrundfarbe'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'document'
+'DirectMail.Newsletter:Divider':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+  ui:
+    group: 'general'
+    label: i18n
+    icon: 'icon-minus'
+    inspector:
+      groups:
+        divider:
+          label: i18n
+'DirectMail.Newsletter:ContentContainer':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+  childNodes:
+    content:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'Neos.NodeTypes:Headline': TRUE
+          'Neos.NodeTypes:Text': TRUE
+          'Neos.NodeTypes:Image': TRUE
+          'Neos.NodeTypes:Column': TRUE
+          'Neos.NodeTypes:TwoColumn': TRUE
+          'Neos.NodeTypes:ThreeColumn': TRUE
+          'Neos.NodeTypes:FourColumn': TRUE
+          'DirectMail.Newsletter:Divider': TRUE
+          '*': FALSE
+  ui:
+    group: 'general'
+    label: i18n
+    icon: 'icon-square'
+    inlineEditable: TRUE
+  properties:
+    contentContainerBackground:
+      type: string
+      defaultValue: '#FFF'
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'visibility'
+    contentContainerPadding:
+      type: boolean
+      defaultValue: TRUE
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'visibility'

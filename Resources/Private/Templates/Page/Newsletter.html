@@ -6,23 +6,19 @@
 <head>
     <f:section name="metadata">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=1024" />
     </f:section>
 </head>
 <body>
 <f:section name="body">
-    <style>
-        html, body, div, header, main, footer, section, nav, span, p, a, h1, h2, h3, figure { margin:0; padding:0; }
-        body { font-family: Arial, Helvetica, sans-serif; }
-        .newsletter { width:900px; margin-left:auto; margin-right:auto; margin-top:40px; margin-bottom:40px; }
-        .content { float:left; width:900px; }
-        @media only screen and (max-width: 900px) {
-            .newsletter { width:100%; margin-left:1em; margin-right:1em; }
-            .content { width:100%; }
-        }
-    </style>
+    <f:if condition="{newsletterBackground}">
+        <style>
+            body { background:{newsletterBackground}; }
+        </style>
+    </f:if>
+    <f:render partial="InlineCss.html" arguments="{_all}" />
     <div class="newsletter">
-        <div class="content">{content.main -> f:format.raw()}</div>
+        {content.main -> f:format.raw()}
     </div>
 </f:section>
 </body>
