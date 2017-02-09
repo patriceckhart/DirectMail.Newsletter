@@ -45,7 +45,7 @@
       type: string
       defaultValue: '#EBEBEB'
       ui:
-        label: 'Hintergrundfarbe'
+        label: i18n
         reloadIfChanged: TRUE
         inspector:
           group: 'document'
