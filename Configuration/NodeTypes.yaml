@@ -49,6 +49,7 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'document'
+          position: 100
     'linkColor':
       type: string
       defaultValue: '#222222'
@@ -57,6 +58,7 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'document'
+          position: 100
 'DirectMail.Newsletter:Divider':
   superTypes:
     'Neos.Neos:Content': TRUE
