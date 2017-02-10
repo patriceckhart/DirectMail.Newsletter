@@ -44,7 +44,6 @@ class CategoryController extends ActionController
      */
     public function createAction($newCategory) {
         $this->categoryRepository->add($newCategory);
-        $this->addFlashMessage('Kategorie angelegt.');
         $this->redirect('index');
     }
 
@@ -62,7 +61,6 @@ class CategoryController extends ActionController
      */
     public function updateAction(Category $category) {
         $this->categoryRepository->update($category);
-        $this->addFlashMessage('Die Änderungen wurden gespeichert.');
         $this->redirect('index');
     }
 
@@ -73,7 +71,6 @@ class CategoryController extends ActionController
     public function deleteAction(Category $category) {
         $category->setDeleted('1');
         $this->categoryRepository->update($category);
-        $this->addFlashMessage('Kategorie wurde deaktiviert.');
         $this->redirect('index');
     }
 

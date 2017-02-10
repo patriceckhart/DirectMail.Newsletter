@@ -96,7 +96,7 @@ class RecipientController extends ActionController
             ->setBody($mailcontent, 'text/html')
             ->send();
 
-        $this->addFlashMessage('Vielen Dank für Ihr Interesse!');
+
         $this->redirect('subscribe');
 
     }
@@ -107,7 +107,7 @@ class RecipientController extends ActionController
      */
     public function addAction($newRecipient) {
         $this->recipientRepository->add($newRecipient);
-        $this->addFlashMessage('Empfänger angelegt.');
+
         $this->redirect('index');
 
     }
@@ -124,7 +124,7 @@ class RecipientController extends ActionController
         $count = count($results);
 
         if ($count==0) {
-            $this->addFlashMessage('Nicht gefunden');
+
             $this->redirect('unsubscribe');
         } else {
             while ($result = $results->current()) {
@@ -132,7 +132,7 @@ class RecipientController extends ActionController
                 $this->recipientRepository->update($result);
                 $results->next();
             }
-            $this->addFlashMessage('Gelöscht');
+
         }
 
         $this->redirect('unsubscribe');
@@ -161,7 +161,7 @@ class RecipientController extends ActionController
      */
     public function updateAction($recipient) {
         $this->recipientRepository->update($recipient);
-        $this->addFlashMessage('Änderungen gespeichert.');
+
         $this->redirect('index');
     }
 
@@ -172,7 +172,7 @@ class RecipientController extends ActionController
     public function hideAction($recipient) {
         $recipient->setDeleted('1');
         $this->recipientRepository->update($recipient);
-        $this->addFlashMessage('Änderungen gespeichert.');
+
         $this->redirect('index');
     }
 
@@ -183,7 +183,6 @@ class RecipientController extends ActionController
     public function activateAction($recipient) {
         $recipient->setDeleted('0');
         $this->recipientRepository->update($recipient);
-        $this->addFlashMessage('Änderungen gespeichert.');
         $this->redirect('index');
     }
 

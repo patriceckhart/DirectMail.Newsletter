@@ -21,10 +21,6 @@ class QueueController extends ActionController
      * @return void
      */
     public function indexAction() {
-        /*$classname = '\DirectMail\Newsletter\Domain\Model\Queue';
-        $query = $this->persistenceManager->createQueryForType($classname);
-        $results = $query->matching($query->equals('done', "0"))->execute();
-        $this->view->assign('results', $results);*/
         $this->view->assign('queues', $this->queueRepository->findAll());
     }
 
@@ -34,7 +30,6 @@ class QueueController extends ActionController
      */
     public function deleteAction($queue) {
         $this->queueRepository->remove($queue);
-        $this->addFlashMessage('Newsletterversand wurde gestoppt.');
         $this->redirect('index','status');
     }
 

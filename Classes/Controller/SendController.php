@@ -70,9 +70,6 @@ class SendController extends ActionController
         $classname = '\DirectMail\Newsletter\Domain\Model\Recipient';
         $query = $this->persistenceManager->createQueryForType($classname);
         $results = $query->matching($query->equals('category', $category))->execute();
-        //$results = $query->matching($query->matching($query->logicalOr($constraints))->execute();
-
-
 
         $recipients = count($results);
 
@@ -81,8 +78,6 @@ class SendController extends ActionController
         $newSend->setPosted("0");
 
         $this->queueRepository->add($newSend);
-
-        $this->addFlashMessage('Newsletter in der Warteschlange.');
 
         $this->redirect('index');
     }
