@@ -11,6 +11,7 @@
 </head>
 <body>
 <f:section name="body">
+    <meta name="viewport" content="width=1200, initial-scale=1, user-scalable=yes">
     <f:if condition="{newsletterBackground}">
         <style>
             body { background:{newsletterBackground}; }
@@ -23,7 +24,7 @@
         </style>
     </f:if>
     <f:render partial="InlineCss.html" arguments="{_all}" />
-    <div style="float:left; width:900px;">
+    <div style="width:900px; margin-left:auto; margin-right:auto;">
         {content.main -> f:format.raw()}
     </div>
 </f:section>
