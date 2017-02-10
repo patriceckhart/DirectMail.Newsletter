@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8be985bf-4a81-4ac6-8006-31e6152ac7c2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Controller/CategoryController.php" afterPath="$PROJECT_DIR$/Classes/Controller/CategoryController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Controller/QueueController.php" afterPath="$PROJECT_DIR$/Classes/Controller/QueueController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Controller/RecipientController.php" afterPath="$PROJECT_DIR$/Classes/Controller/RecipientController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Controller/SendController.php" afterPath="$PROJECT_DIR$/Classes/Controller/SendController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Private/Layouts/Backend.html" afterPath="$PROJECT_DIR$/Resources/Private/Layouts/Backend.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Private/Layouts/Default.html" afterPath="$PROJECT_DIR$/Resources/Private/Layouts/Default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Private/Templates/Recipient/Subscribe.html" afterPath="$PROJECT_DIR$/Resources/Private/Templates/Recipient/Subscribe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Private/Templates/Recipient/Unsubscribe.html" afterPath="$PROJECT_DIR$/Resources/Private/Templates/Recipient/Unsubscribe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Private/Translations/de/Main.xlf" afterPath="$PROJECT_DIR$/Resources/Private/Translations/de/Main.xlf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Private/Translations/de/NodeTypes/Subscribe.xlf" afterPath="$PROJECT_DIR$/Resources/Private/Translations/de/NodeTypes/Subscribe.xlf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Private/Translations/en/Main.xlf" afterPath="$PROJECT_DIR$/Resources/Private/Translations/en/Main.xlf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Private/Translations/en/NodeTypes/Subscribe.xlf" afterPath="$PROJECT_DIR$/Resources/Private/Translations/en/NodeTypes/Subscribe.xlf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +22,50 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Subscribe.xlf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/Private/Translations/de/NodeTypes/Subscribe.xlf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="44" column="46" lean-forward="false" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Subscribe.xlf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Resources/Private/Translations/en/NodeTypes/Subscribe.xlf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="44" column="41" lean-forward="false" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecipientController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/Controller/RecipientController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="136" column="38" lean-forward="false" selection-start-line="136" selection-start-column="38" selection-end-line="136" selection-end-column="38" />
+              <folding>
+                <marker date="1486723193000" expanded="true" signature="2122:2251" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Unsubscribe.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/Private/Templates/Recipient/Unsubscribe.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -65,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Resources/Private/Templates/Page/Default.html" />
         <option value="$PROJECT_DIR$/Resources/Private/Fusion/NodeTypes/Subscribe.fusion" />
         <option value="$PROJECT_DIR$/Resources/Private/Fusion/NodeTypes/Unsubscribe.fusion" />
         <option value="$PROJECT_DIR$/Classes/Domain/Model/Category.php" />
@@ -73,8 +116,6 @@
         <option value="$PROJECT_DIR$/Classes/Domain/Model/Queue.php" />
         <option value="$PROJECT_DIR$/Classes/Command/CronCommandController.php" />
         <option value="$PROJECT_DIR$/Resources/Public/Styles/main.css" />
-        <option value="$PROJECT_DIR$/Resources/Private/Translations/en/NodeTypes/Subscribe.xlf" />
-        <option value="$PROJECT_DIR$/Resources/Private/Templates/Recipient/Subscribe.html" />
         <option value="$PROJECT_DIR$/Classes/Domain/Repository/QueueRepository.php" />
         <option value="$PROJECT_DIR$/Resources/Private/Translations/en/NodeTypes/Divider.xlf" />
         <option value="$PROJECT_DIR$/Resources/Private/Partials/InlineCss.html" />
@@ -84,7 +125,6 @@
         <option value="$PROJECT_DIR$/Resources/Private/Translations/en/NodeTypes/Unsubscribe.xlf" />
         <option value="$PROJECT_DIR$/Resources/Private/Translations/de/NodeTypes/ContentContainer.xlf" />
         <option value="$PROJECT_DIR$/Resources/Private/Translations/de/NodeTypes/Divider.xlf" />
-        <option value="$PROJECT_DIR$/Resources/Private/Translations/de/NodeTypes/Subscribe.xlf" />
         <option value="$PROJECT_DIR$/Resources/Private/Translations/de/NodeTypes/Unsubscribe.xlf" />
         <option value="$PROJECT_DIR$/Resources/Private/Translations/de/Newsletter.xlf" />
         <option value="$PROJECT_DIR$/Resources/Private/Translations/en/Newsletter.xlf" />
@@ -106,16 +146,20 @@
         <option value="$PROJECT_DIR$/Resources/Private/Templates/Send/Send.html" />
         <option value="$PROJECT_DIR$/Resources/Private/Templates/Page/Partials/InlineCss.html" />
         <option value="$PROJECT_DIR$/Resources/Private/Templates/NodeTypes/ContentContainer.html" />
-        <option value="$PROJECT_DIR$/Resources/Private/Translations/de/Main.xlf" />
-        <option value="$PROJECT_DIR$/Resources/Private/Translations/en/Main.xlf" />
         <option value="$PROJECT_DIR$/Resources/Private/Templates/Recipient/New.html" />
         <option value="$PROJECT_DIR$/Resources/Private/Templates/Page/Newsletter.html" />
         <option value="$PROJECT_DIR$/Classes/Controller/CategoryController.php" />
         <option value="$PROJECT_DIR$/Classes/Controller/QueueController.php" />
         <option value="$PROJECT_DIR$/Classes/Controller/SendController.php" />
-        <option value="$PROJECT_DIR$/Classes/Controller/RecipientController.php" />
         <option value="$PROJECT_DIR$/Resources/Private/Layouts/Backend.html" />
         <option value="$PROJECT_DIR$/Resources/Private/Layouts/Default.html" />
+        <option value="$PROJECT_DIR$/Resources/Private/Translations/en/Main.xlf" />
+        <option value="$PROJECT_DIR$/Resources/Private/Translations/de/Main.xlf" />
+        <option value="$PROJECT_DIR$/Resources/Private/Templates/Recipient/Subscribe.html" />
+        <option value="$PROJECT_DIR$/Classes/Controller/RecipientController.php" />
+        <option value="$PROJECT_DIR$/Resources/Private/Templates/Recipient/Unsubscribe.html" />
+        <option value="$PROJECT_DIR$/Resources/Private/Translations/de/NodeTypes/Subscribe.xlf" />
+        <option value="$PROJECT_DIR$/Resources/Private/Translations/en/NodeTypes/Subscribe.xlf" />
       </list>
     </option>
   </component>
@@ -769,23 +813,23 @@
       <workItem from="1486646410751" duration="2828000" />
       <workItem from="1486705804834" duration="2750000" />
       <workItem from="1486718913720" duration="2338000" />
-      <workItem from="1486721422511" duration="1492000" />
+      <workItem from="1486721422511" duration="1795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54923000" />
+    <option name="totallyTimeSpent" value="55226000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1341" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13343924" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21803018" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15132105" sideWeight="0.3113582" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298639" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18094476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12890312" sideWeight="0.6886418" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -814,13 +858,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Configuration/Policy.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/Public/Styles/main.css" />
     <entry file="file://$PROJECT_DIR$/Classes/Command/CronCommandController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -892,13 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Private/Translations/de/NodeTypes/Subscribe.xlf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="78" lean-forward="false" selection-start-line="2" selection-start-column="78" selection-end-line="2" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/Private/Translations/de/NodeTypes/Unsubscribe.xlf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -945,20 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Private/Translations/en/NodeTypes/Subscribe.xlf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Private/Templates/Recipient/Subscribe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1022,22 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Private/Translations/en/Main.xlf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="45" column="61" lean-forward="false" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Private/Translations/de/Main.xlf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="46" column="61" lean-forward="false" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -1140,16 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Controller/RecipientController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding>
-            <marker date="1486722934000" expanded="true" signature="2122:2251" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/Private/Layouts/Default.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1162,6 +1152,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Private/Translations/de/Main.xlf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Private/Translations/en/Main.xlf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Private/Templates/Recipient/Subscribe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Controller/RecipientController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="136" column="38" lean-forward="false" selection-start-line="136" selection-start-column="38" selection-end-line="136" selection-end-column="38" />
+          <folding>
+            <marker date="1486723193000" expanded="true" signature="2122:2251" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Private/Templates/Recipient/Unsubscribe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Private/Translations/de/NodeTypes/Subscribe.xlf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="46" lean-forward="false" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Private/Translations/en/NodeTypes/Subscribe.xlf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="41" lean-forward="false" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
           <folding />
         </state>
       </provider>

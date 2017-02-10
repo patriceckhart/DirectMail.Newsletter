@@ -2,6 +2,9 @@
 {namespace fusion=Neos\Fusion\ViewHelpers}
 <f:layout name="Default" />
 <f:section name="Content">
+    <f:if condition="{error}==1">
+        {f:translate(id: 'content.unsubscribeerror', package: 'DirectMail.Newsletter', source: 'NodeTypes/Subscribe')}
+    </f:if>
     <f:form action="delete" objectName="recipient">
         <ol>
             <li>

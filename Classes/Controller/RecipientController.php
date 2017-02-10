@@ -97,6 +97,8 @@ class RecipientController extends ActionController
             ->send();
 
 
+        $this->view->assign('success', '1');
+
         $this->redirect('subscribe');
 
     }
@@ -132,7 +134,7 @@ class RecipientController extends ActionController
                 $this->recipientRepository->update($result);
                 $results->next();
             }
-
+            $this->view->assign('error', '1');
         }
 
         $this->redirect('unsubscribe');

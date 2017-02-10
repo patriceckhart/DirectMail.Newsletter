@@ -2,9 +2,6 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
 	<file original="" product-name="DirectMail.Newsletter" source-language="en" datatype="plaintext">
 		<body>
-			<trans-unit id="subscribeSuccessMessage" xml:space="preserve">
-				<source>Thanks for your interest!</source>
-			</trans-unit>
 
             <trans-unit id="content.categorylabel" xml:space="preserve">
                 <source>Category</source>

@@ -2,6 +2,9 @@
 {namespace fusion=Neos\Fusion\ViewHelpers}
 <f:layout name="Default" />
 <f:section name="Content">
+    <f:if condition="{success}==1">
+        {f:translate(id: 'content.success', package: 'DirectMail.Newsletter', source: 'NodeTypes/Subscribe')}
+    </f:if>
     <f:if condition="{category}">
         <f:then>
     <f:form action="create" objectName="newRecipient" controller="Recipient">

@@ -36,6 +36,16 @@
             <trans-unit id="content.chooseidentifier" xml:space="preserve">
                 <source>Definieren Sie einen Identifier im Inspector</source>
             </trans-unit>
+
+            <trans-unit id="content.success" xml:space="preserve">
+                <source>Anmeldung erfolgreich</source>
+            </trans-unit>
+
+            <trans-unit id="content.unsubscribeerror" xml:space="preserve">
+                <source>E-Mail nicht gefunden!</source>
+            </trans-unit>
+
+
 		</body>
 	</file>
 </xliff>
