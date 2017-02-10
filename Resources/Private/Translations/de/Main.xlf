@@ -40,6 +40,30 @@
                 <trans-unit id="content.pending" xml:space="preserve">
                                              <source>Ausstehend</source>
                         </trans-unit>
+
+                        <trans-unit id="content.emaillabel" xml:space="preserve"><source>E-Mail</source></trans-unit>
+                        <trans-unit id="content.namelabel" xml:space="preserve"><source>Name</source></trans-unit>
+                        <trans-unit id="content.firstnamelabel" xml:space="preserve"><source>Vorname</source></trans-unit>
+                        <trans-unit id="content.lastname" xml:space="preserve"><source>Nachname</source></trans-unit>
+                        <trans-unit id="content.salutationlabel" xml:space="preserve"><source>Anrede</source></trans-unit>
+                        <trans-unit id="content.malelabel" xml:space="preserve"><source>Herr</source></trans-unit>
+                        <trans-unit id="content.femalelabel" xml:space="preserve"><source>Frau</source></trans-unit>
+                        <trans-unit id="content.famlabel" xml:space="preserve"><source>Familie</source></trans-unit>
+
+                        <trans-unit id="content.csvdatalabel" xml:space="preserve"><source>CSV Daten (getrennt mit Semikolon)</source></trans-unit>
+                        <trans-unit id="content.importdatalabel" xml:space="preserve"><source>Import starten</source></trans-unit>
+
+                        <trans-unit id="content.activelabel" xml:space="preserve"><source>Aktiv</source></trans-unit>
+                        <trans-unit id="content.inactivelabel" xml:space="preserve"><source>Inaktiv</source></trans-unit>
+
+                        <trans-unit id="content.norecipientslabel" xml:space="preserve"><source>Keine Empfänger verfügbar.</source></trans-unit>
+
+                        <trans-unit id="content.newrecipientslabel" xml:space="preserve"><source>Neuen Empfänger anlegen</source></trans-unit>
+                        <trans-unit id="content.importrecipientslabel" xml:space="preserve"><source>Empfängerliste importieren</source></trans-unit>
+
+<trans-unit id="content.sendnowlabel" xml:space="preserve"><source>Newsletter jetzt senden</source></trans-unit>
+
+
 		</body>
 	</file>
 </xliff>

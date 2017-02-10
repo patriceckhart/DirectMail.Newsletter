@@ -1,7 +1,5 @@
 <f:layout name="Default" />
 
-<f:section name="Title">Neuen Empfänger anlegen</f:section>
-
 <f:section name="Content">
     <br />
     <f:form action="importCSV" controller="Recipient" enctype="multipart/form-data">
@@ -14,14 +12,14 @@
 
             <div class="neos-control-group">
                 <div class="neos-control-group">
-                    <label class="neos-control-label" for="category">Kategorie</label>
+                    <label class="neos-control-label" for="category">{f:translate(id: 'content.categorylabel', package: 'DirectMail.Newsletter', source: 'Main')}</label>
                     <f:form.select name="category" id="category" property="category" options="{categories}" optionLabelField="name" />
                 </div>
             </div>
 
         </div>
         <div class="neos-footer">
-            <f:form.submit class="neos-button neos-button-primary" value="Empfängerliste importieren" />
+            <f:form.submit class="neos-button neos-button-primary" value="{f:translate(id: 'content.importdatalabel', package: 'DirectMail.Newsletter', source: 'Main')}" />
         </div>
     </f:form>
 </f:section>

@@ -1,13 +1,12 @@
 <f:layout name="Default" />
 
-<f:section name="Title">Kategorie auswählen</f:section>
 
 <f:section name="Content">
     Seite: {title} ({hostname}{pageUrl})
     <table class="neos-table">
         <thead>
         <tr>
-            <td>Kategorie</td>
+            <td>{f:translate(id: 'content.categorylabel', package: 'DirectMail.Newsletter', source: 'Main')}</td>
             <td>&nbsp;</td>
         </tr>
         </thead>
@@ -21,7 +20,7 @@
                             <f:form.hidden property="title" value="{title}" />
                             <f:form.hidden property="category" value="<f:format.identifier>{category}</f:format.identifier>" />
                             <f:form.hidden property="done" value="0" />
-                            <button type="submit" class="neos-button neos-button-primary">Newsletter jetzt senden</button>
+                            <button type="submit" class="neos-button neos-button-primary">{f:translate(id: 'content.sendnowlabel', package: 'DirectMail.Newsletter', source: 'Main')}</button>
                         </f:form>
                     </div></td></tr>
                 </f:then>

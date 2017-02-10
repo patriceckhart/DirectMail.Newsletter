@@ -1,6 +1,5 @@
 <f:layout name="Default" />
 
-<f:section name="Title">Neuen Empfänger anlegen</f:section>
 
 <f:section name="Content">
     <br />
@@ -8,41 +7,41 @@
         <div class="neos-content neos-container-fluid">
 
             <div class="neos-control-group">
-                <label for="email">E-Mail</label>
+                <label for="email">{f:translate(id: 'content.emaillabel', package: 'DirectMail.Newsletter', source: 'Main')}</label>
                 <f:form.textfield property="email" id="email" />
             </div>
 
             <div class="neos-control-group">
-                <label for="firstname">Vorname</label>
+                <label for="firstname">{f:translate(id: 'content.firstnamelabel', package: 'DirectMail.Newsletter', source: 'Main')}</label>
                 <f:form.textfield property="firstname" id="firstname" />
             </div>
 
             <div class="neos-control-group">
-                <label for="lastname">Nachname</label>
+                <label for="lastname">{f:translate(id: 'content.lastnamelabel', package: 'DirectMail.Newsletter', source: 'Main')}</label>
                 <f:form.textfield property="lastname" id="lastname" />
             </div>
 
             <div class="neos-controls">
-                <label>Anrede</label>
+                <label>{f:translate(id: 'content.salutationlabel', package: 'DirectMail.Newsletter', source: 'Main')}</label>
                 <label for="gender1" class="neos-radio">
                     <f:form.radio property="gender" id="gender1" value="1" /><span></span>
-                    <span>Herr</span>
+                    <span>{f:translate(id: 'content.malelabel', package: 'DirectMail.Newsletter', source: 'Main')}span>
                 </label>
                 <br />
                 <label for="gender2" class="neos-radio">
                     <f:form.radio property="gender" id="gender2" value="2" /><span></span>
-                    <span>Frau</span>
+                    <span>{f:translate(id: 'content.femalelabel', package: 'DirectMail.Newsletter', source: 'Main')}</span>
                 </label>
                 <br />
                 <label for="gender3" class="neos-radio">
                     <f:form.radio property="gender" id="gender3" value="3" /><span></span>
-                    <span>Familie</span>
+                    <span>{f:translate(id: 'content.famlabel', package: 'DirectMail.Newsletter', source: 'Main')}</span>
                 </label>
             </div>
 
             <div class="neos-control-group">
                 <div class="neos-control-group">
-                    <label class="neos-control-label" for="category">Kategorie</label>
+                    <label class="neos-control-label" for="category">{f:translate(id: 'content.categorylabel', package: 'DirectMail.Newsletter', source: 'Main')}</label>
                     <f:form.select name="category" id="category" property="category" options="{categories}" optionLabelField="name" />
                 </div>
             </div>
@@ -50,7 +49,7 @@
         </div>
         <f:form.hidden property="deleted" id="deleted" value="0" />
         <div class="neos-footer">
-            <f:form.submit class="neos-button neos-button-primary" value="Empfänger speichern" />
+            <f:form.submit class="neos-button neos-button-primary" value="{f:translate(id: 'content.savenew', package: 'DirectMail.Newsletter', source: 'Main')}" />
         </div>
     </f:form>
 </f:section>

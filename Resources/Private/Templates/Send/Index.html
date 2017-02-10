@@ -1,13 +1,13 @@
 {namespace neos=Neos\Neos\ViewHelpers}
 {namespace fusion=Neos\Fusion\ViewHelpers}
 <f:layout name="Default" />
-<f:section name="Title">Newsletter senden</f:section>
+
 <f:section name="Content">
     <table class="neos-table">
         <thead>
         <tr>
-            <td>Seite</td>
-            <td>URL</td>
+            <td>{f:translate(id: 'content.page', package: 'DirectMail.Newsletter', source: 'Main')}</td>
+            <td>{f:translate(id: 'content.url', package: 'DirectMail.Newsletter', source: 'Main')}</td>
             <td>&nbsp;</td>
         </tr>
         </thead>

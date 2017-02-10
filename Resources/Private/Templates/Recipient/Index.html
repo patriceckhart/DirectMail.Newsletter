@@ -1,17 +1,17 @@
 {namespace neos=Neos\Neos\ViewHelpers}
 {namespace fusion=Neos\Fusion\ViewHelpers}
 <f:layout name="Default" />
-<f:section name="Title">Empfänger</f:section>
+
 <f:section name="Content">
     <f:if condition="{recipients}">
         <f:then>
             <table class="neos-table">
                 <thead>
                 <tr>
-                    <td>Name</td>
-                    <td>E-Mail</td>
-                    <td>Anrede</td>
-                    <td>Kategorie</td>
+                    <td>{f:translate(id: 'content.namelabel', package: 'DirectMail.Newsletter', source: 'Main')}</td>
+                    <td>{f:translate(id: 'content.emaillabel', package: 'DirectMail.Newsletter', source: 'Main')}</td>
+                    <td>{f:translate(id: 'content.salutationlabel', package: 'DirectMail.Newsletter', source: 'Main')}</td>
+                    <td>{f:translate(id: 'content.categorylabel', package: 'DirectMail.Newsletter', source: 'Main')}</td>
                     <td>Status</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -39,10 +39,10 @@
                         <td>
                             <f:if condition="{recipient.deleted}==0">
                                 <f:then>
-                                    Aktiv
+                                    {f:translate(id: 'content.activelabel', package: 'DirectMail.Newsletter', source: 'Main')}
                                 </f:then>
                                 <f:else>
-                                    Inaktiv
+                                    {f:translate(id: 'content.inactivelabel', package: 'DirectMail.Newsletter', source: 'Main')}
                                 </f:else>
                             </f:if>
                         </td>
@@ -69,11 +69,11 @@
             </table>
         </f:then>
         <f:else>
-            <br />Keine Empfänger verfügbar.
+            <br />{f:translate(id: 'content.norecipientslabel', package: 'DirectMail.Newsletter', source: 'Main')}
         </f:else>
     </f:if>
     <div class="neos-footer">
-        <f:link.action class="neos-button neos-button-primary" action="new">Neuen Empfänger anlegen</f:link.action>
-        <f:link.action class="neos-button neos-button-primary" action="import">Empfängerliste importieren</f:link.action>
+        <f:link.action class="neos-button neos-button-primary" action="new">{f:translate(id: 'content.newrecipientslabel', package: 'DirectMail.Newsletter', source: 'Main')}</f:link.action>
+        <f:link.action class="neos-button neos-button-primary" action="import">{f:translate(id: 'content.importrecipientslabel', package: 'DirectMail.Newsletter', source: 'Main')}</f:link.action>
     </div>
 </f:section>
