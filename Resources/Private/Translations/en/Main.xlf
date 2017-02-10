@@ -43,7 +43,7 @@
                         <trans-unit id="content.emaillabel" xml:space="preserve"><source>E-Mail</source></trans-unit>
                         <trans-unit id="content.namelabel" xml:space="preserve"><source>Name</source></trans-unit>
                         <trans-unit id="content.firstnamelabel" xml:space="preserve"><source>Firstname</source></trans-unit>
-                        <trans-unit id="content.lastname" xml:space="preserve"><source>Lastname</source></trans-unit>
+                        <trans-unit id="content.lastnamelabel" xml:space="preserve"><source>Lastname</source></trans-unit>
                         <trans-unit id="content.salutationlabel" xml:space="preserve"><source>Salutation</source></trans-unit>
                         <trans-unit id="content.malelabel" xml:space="preserve"><source>Mr.</source></trans-unit>
                         <trans-unit id="content.femalelabel" xml:space="preserve"><source>Ms.</source></trans-unit>
