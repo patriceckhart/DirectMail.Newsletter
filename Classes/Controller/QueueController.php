@@ -34,7 +34,7 @@ class QueueController extends ActionController
      */
     public function deleteAction($queue) {
         $this->queueRepository->remove($queue);
-        $this->addFlashMessage('Newsletter wurde vom Versand ausgenommen');
+        $this->addFlashMessage('Newsletterversand wurde gestoppt.');
         $this->redirect('index','status');
     }
 

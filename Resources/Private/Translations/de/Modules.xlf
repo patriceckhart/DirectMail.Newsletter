@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="DirectMail.Newsletter" source-language="de" datatype="plaintext">
+		<body>
+			<trans-unit id="recipients.label" xml:space="preserve">
+				<source>Empfänger</source>
+			</trans-unit>
+            <trans-unit id="recipients.description" xml:space="preserve">
+				<source>Mit diesem Modul, können Sie Empfänger bearbeiten.</source>
+			</trans-unit>
+
+            <trans-unit id="categories.label" xml:space="preserve">
+				<source>Kategorien</source>
+			</trans-unit>
+            <trans-unit id="categories.description" xml:space="preserve">
+				<source>Mit diesem Modul, können Sie die Kategorien bearbeiten.</source>
+			</trans-unit>
+
+            <trans-unit id="send.label" xml:space="preserve">
+				<source>Newsletter senden</source>
+			</trans-unit>
+            <trans-unit id="send.description" xml:space="preserve">
+				<source>Mit diesem Modul, können Sie die Newsletterseiten versenden.</source>
+			</trans-unit>
+
+            <trans-unit id="queue.label" xml:space="preserve">
+				<source>Warteschlange</source>
+			</trans-unit>
+            <trans-unit id="queue.description" xml:space="preserve">
+				<source>Mit diesem Modul, können Sie die Warteschlange einsehen und bearbeiten.</source>
+			</trans-unit>
+
+            <trans-unit id="recipients.buttonlabel" xml:space="preserve">
+				<source>Empfänger bearbeiten</source>
+			</trans-unit>
+            <trans-unit id="categories.buttonlabel" xml:space="preserve">
+				<source>Kategorien bearbeiten</source>
+			</trans-unit>
+            <trans-unit id="send.buttonlabel" xml:space="preserve">
+				<source>Newsletter senden</source>
+			</trans-unit>
+            <trans-unit id="queue.buttonlabel" xml:space="preserve">
+				<source>Warteschlange</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

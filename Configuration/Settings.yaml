@@ -12,7 +12,8 @@ Neos:
       translation:
         autoInclude:
           DirectMail.Newsletter:
-            - 'Main'
+            - Main
+            - Modules
             - 'NodeTypes/*'
       inspector:
         dataTypes:
@@ -24,46 +25,46 @@ Neos:
       directMailNewsletter:
         label: 'DirectMail Newsletter'
         controller: '\Neos\Neos\Controller\Module\ManagementController'
-        description: 'DirectMail Newsletter Admin'
+        description: 'DirectMail Newsletter'
         icon: 'icon-envelope'
         resource: 'Neos_Neos_Backend_Module_Management'
         submodules:
           Recipients:
-            label: 'Empfänger'
+            label: DirectMail.Newsletter:Modules:recipients.label
             controller: '\DirectMail\Newsletter\Controller\RecipientController'
-            description: 'Mit diesem Modul, können Sie Empfänger bearbeiten.'
+            description: DirectMail.Newsletter:Modules:recipients.description
             icon: 'icon-user'
             actions:
               index:
-                label: 'Empfänger bearbeiten'
-                title: 'Empfänger bearbeiten'
+                label: DirectMail.Newsletter:Modules:recipients.buttonlabel
+                title: DirectMail.Newsletter:Modules:recipients.buttonlabel
           Categories:
-            label: 'Kategorien'
+            label: DirectMail.Newsletter:Modules:categories.label
             controller: '\DirectMail\Newsletter\Controller\CategoryController'
-            description: 'Mit diesem Modul, können Sie Kategorien bearbeiten.'
+            description: DirectMail.Newsletter:Modules:categories.description
             icon: 'icon-th-list'
             actions:
               index:
-                label: 'Kategorien bearbeiten'
-                title: 'Kategorien bearbeiten'
+                label: DirectMail.Newsletter:Modules:categories.buttonlabel
+                title: DirectMail.Newsletter:Modules:categories.buttonlabel
           Send:
-            label: 'Newsletter senden'
+            label: DirectMail.Newsletter:Modules:send.label
             controller: '\DirectMail\Newsletter\Controller\SendController'
-            description: 'Mit diesem Modul, können Sie Newsletter Seiten versenden.'
+            description: DirectMail.Newsletter:Modules:send.description
             icon: 'icon-mail-forward'
             actions:
               index:
-                label: 'Newsletter senden'
-                title: 'Newsletter senden'
+                label: DirectMail.Newsletter:Modules:send.buttonlabel
+                title: DirectMail.Newsletter:Modules:send.buttonlabel
           Queue:
-            label: 'Warteschlange'
+            label: DirectMail.Newsletter:Modules:queue.label
             controller: '\DirectMail\Newsletter\Controller\QueueController'
-            description: 'Mit diesem Modul, können Sie Warteschlange einsehen.'
+            description: DirectMail.Newsletter:Modules:queue.description
             icon: 'icon-time'
             actions:
               index:
-                label: 'Warteschlange'
-                title: 'Warteschlange'
+                label: DirectMail.Newsletter:Modules:queue.buttonlabel
+                title: DirectMail.Newsletter:Modules:queue.buttonlabel
 DirectMail:
   Newsletter:
     adminName: 'Admin Name'
