@@ -8,10 +8,10 @@
             <table class="neos-table">
                 <thead>
                 <tr>
-                    <td>Seite</td>
-                    <td>URL</td>
-                    <td>Versand</td>
-                    <td>Status</td>
+                    <td>{f:translate(id: 'content.page', package: 'DirectMail.Newsletter', source: 'Main')}</td>
+                    <td>{f:translate(id: 'content.url', package: 'DirectMail.Newsletter', source: 'Main')}</td>
+                    <td>{f:translate(id: 'content.shipping', package: 'DirectMail.Newsletter', source: 'Main')}</td>
+                    <td>{f:translate(id: 'content.status', package: 'DirectMail.Newsletter', source: 'Main')}</td>
                     <td>&nbsp;</td>
                 </tr>
                 </thead>
@@ -24,10 +24,10 @@
                         <td>
                             <f:if condition="{queue.quantity}=={queue.posted}">
                                 <f:then>
-                                    Fertig
+                                    {f:translate(id: 'content.finish', package: 'DirectMail.Newsletter', source: 'Main')}
                                 </f:then>
                                 <f:else>
-                                    Ausstehend
+                                    {f:translate(id: 'content.pending', package: 'DirectMail.Newsletter', source: 'Main')}
                                 </f:else>
                             </f:if>
                         </td>
@@ -54,7 +54,7 @@
             </div>
         </f:then>
         <f:else>
-            Die Warteschlange ist leer
+            {f:translate(id: 'content.queueempty', package: 'DirectMail.Newsletter', source: 'Main')}
         </f:else>
     </f:if>
 </f:section>

@@ -9,7 +9,7 @@
                 <thead>
                 <tr>
                     <td>Identifier</td>
-                    <td>Kategorie</td>
+                    <td>{f:translate(id: 'content.categorylabel', package: 'DirectMail.Newsletter', source: 'Main')}</td>
                     <td>&nbsp;</td>
                 </tr>
                 </thead>
@@ -34,10 +34,10 @@
             </table>
         </f:then>
         <f:else>
-            <br />Keine Kategorien verfügbar.
+            <br />{f:translate(id: 'content.nocategories', package: 'DirectMail.Newsletter', source: 'Main')}
         </f:else>
     </f:if>
     <div class="neos-footer">
-        <f:link.action class="neos-button neos-button-primary" action="new">Neuen Kategorie anlegen</f:link.action>
+        <f:link.action class="neos-button neos-button-primary" action="new">{f:translate(id: 'content.newcategory', package: 'DirectMail.Newsletter', source: 'Main')}</f:link.action>
     </div>
 </f:section>

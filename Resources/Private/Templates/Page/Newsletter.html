@@ -23,8 +23,10 @@
         </style>
     </f:if>
     <f:render partial="InlineCss.html" arguments="{_all}" />
-    <div class="newsletter">
-        {content.main -> f:format.raw()}
+    <div class="stage">
+        <div class="newsletter">
+            {content.main -> f:format.raw()}
+        </div>
     </div>
 </f:section>
 </body>

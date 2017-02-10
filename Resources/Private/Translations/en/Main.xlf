@@ -5,6 +5,40 @@
 			<trans-unit id="subscribeSuccessMessage" xml:space="preserve">
 				<source>Thanks for your interest!</source>
 			</trans-unit>
+
+            <trans-unit id="content.categorylabel" xml:space="preserve">
+                <source>Category</source>
+            </trans-unit>
+            <trans-unit id="content.nocategories" xml:space="preserve">
+                            <source>No Categories.</source>
+                        </trans-unit>
+            <trans-unit id="content.newcategory" xml:space="preserve">
+                            <source>Add new Category</source>
+                        </trans-unit>
+                        <trans-unit id="content.savechanges" xml:space="preserve">
+                                                    <source>Save changes</source>
+                                                </trans-unit>
+                                                <trans-unit id="content.savenew" xml:space="preserve">
+                                                                                                    <source>Save</source>
+                                                                                                </trans-unit>
+<trans-unit id="content.page" xml:space="preserve">
+              <source>Page</source>
+          </trans-unit>
+        <trans-unit id="content.url" xml:space="preserve">
+              <source>Page-URL</source>
+          </trans-unit>
+                     <trans-unit id="content.shipping" xml:space="preserve">
+                           <source>Shipping</source>
+                       </trans-unit>
+                       <trans-unit id="content.status" xml:space="preserve">
+                             <source>Status</source>
+        </trans-unit>
+        <trans-unit id="content.finish" xml:space="preserve">
+                                     <source>Finish</source>
+                </trans-unit>
+                <trans-unit id="content.pending" xml:space="preserve">
+                                             <source>Pending</source>
+                        </trans-unit>
 		</body>
 	</file>
 </xliff>

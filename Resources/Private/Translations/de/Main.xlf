@@ -5,6 +5,41 @@
 			<trans-unit id="subscribeSuccessMessage" xml:space="preserve">
 				<source>Vielen Dank für Ihr Interesse!</source>
 			</trans-unit>
+
+				<trans-unit id="content.categorylabel" xml:space="preserve">
+                        <source>Kategorie</source>
+                    </trans-unit>
+                    <trans-unit id="content.nocategories" xml:space="preserve">
+                        <source>Keine Kategorien verfügbar.</source>
+                    </trans-unit>
+        <trans-unit id="content.newcategory" xml:space="preserve">
+                        <source>Neue Kategorie anlegen</source>
+                    </trans-unit>
+                    <trans-unit id="content.savechanges" xml:space="preserve">
+                                    <source>Änderungen speichern</source>
+                                </trans-unit>
+                                <trans-unit id="content.savenew" xml:space="preserve">
+             <source>Speichern</source>
+         </trans-unit>
+
+         <trans-unit id="content.page" xml:space="preserve">
+              <source>Seite</source>
+          </trans-unit>
+        <trans-unit id="content.url" xml:space="preserve">
+              <source>Seiten-URL</source>
+          </trans-unit>
+                     <trans-unit id="content.shipping" xml:space="preserve">
+                           <source>Versand</source>
+                       </trans-unit>
+                       <trans-unit id="content.status" xml:space="preserve">
+                             <source>Status</source>
+        </trans-unit>
+        <trans-unit id="content.finish" xml:space="preserve">
+                                     <source>Fertig</source>
+                </trans-unit>
+                <trans-unit id="content.pending" xml:space="preserve">
+                                             <source>Ausstehend</source>
+                        </trans-unit>
 		</body>
 	</file>
 </xliff>
