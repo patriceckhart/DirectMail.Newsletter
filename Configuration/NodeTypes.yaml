@@ -110,3 +110,11 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'visibility'
+    contentColor:
+      type: string
+      defaultValue: '#222'
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'visibility'

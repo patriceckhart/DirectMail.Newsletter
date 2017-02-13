@@ -11,6 +11,9 @@
             <trans-unit id="properties.contentContainerPadding" xml:space="preserve">
                 <source>Padding</source>
             </trans-unit>
+            <trans-unit id="properties.contentColor" xml:space="preserve">
+                <source>Fontcolor</source>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>
