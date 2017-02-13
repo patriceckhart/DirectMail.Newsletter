@@ -67,9 +67,22 @@ class SendController extends ActionController
 
         $category = $newSend->getCategory();
 
+        /*$classname = '\DirectMail\Newsletter\Domain\Model\Recipient';
+        $query = $this->persistenceManager->createQueryForType($classname);
+        $results = $query->matching($query->equals('category', $category))->execute();*/
+
+        $filterArr = array('category' => $category, 'deleted' => "0");
+
         $classname = '\DirectMail\Newsletter\Domain\Model\Recipient';
         $query = $this->persistenceManager->createQueryForType($classname);
-        $results = $query->matching($query->equals('category', $category))->execute();
+
+        foreach($filterArr as $property => $filter) {
+            if(isset($filter)) {
+                $constraintArr[] = $query->equals($property, $filter);
+            }
+        }
+
+        $results = $query->matching($query->logicalAnd($constraintArr))->execute();
 
         $recipients = count($results);
 

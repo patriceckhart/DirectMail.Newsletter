@@ -60,6 +60,10 @@
 
 <trans-unit id="content.sendnowlabel" xml:space="preserve"><source>Newsletter jetzt senden</source></trans-unit>
 
+<trans-unit id="content.deletequeue" xml:space="preserve"><source>Warteschlange aufräumen</source></trans-unit>
+
+<trans-unit id="content.queueempty" xml:space="preserve"><source>Die Warteschlange ist leer.</source></trans-unit>
+
 
 		</body>
 	</file>

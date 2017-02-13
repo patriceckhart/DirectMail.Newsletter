@@ -50,7 +50,7 @@
                 </tbody>
             </table>
             <div class="neos-footer">
-                <!--<f:link.action class="neos-button neos-button-primary" action="send" controller="status">Versand anstoßen</f:link.action>-->
+                <f:link.action class="neos-button neos-button-primary" action="cleanup" controller="queue">{f:translate(id: 'content.deletequeue', package: 'DirectMail.Newsletter', source: 'Main')}</f:link.action>
             </div>
         </f:then>
         <f:else>

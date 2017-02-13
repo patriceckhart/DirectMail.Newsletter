@@ -33,6 +33,34 @@ class QueueController extends ActionController
         $this->redirect('index','status');
     }
 
+    /**
+     * @return void
+     */
+    public function cleanupAction() {
+
+        $classname = '\DirectMail\Newsletter\Domain\Model\Queue';
+        $query = $this->persistenceManager->createQueryForType($classname);
+        $results = $query->matching($query->equals('send', "1"))->execute();
+
+
+        while ($result = $results->current()) {
+
+            $quantity = $result->getQuantity();
+            $posted = $result->getPosted();
+
+            if($quantity==$posted) {
+                $this->queueRepository->remove($result);
+                $this->persistenceManager->persistAll();
+            }
+
+            $results->next();
+
+        }
+
+
+        $this->redirect('index','status');
+    }
+
 
 
 

@@ -60,6 +60,10 @@
 
                         <trans-unit id="content.sendnowlabel" xml:space="preserve"><source>Send Newsletter</source></trans-unit>
 
+                        <trans-unit id="content.deletequeue" xml:space="preserve"><source>Cleanup Queue</source></trans-unit>
+
+                        <trans-unit id="content.queueempty" xml:space="preserve"><source>Queue empty.</source></trans-unit>
+
 
 		</body>
 	</file>

@@ -49,10 +49,6 @@ class Queue
      */
     protected $send;
 
-    /**
-     * @var string
-     */
-    protected $done;
 
     /**
      * @return string
@@ -123,21 +119,6 @@ class Queue
      */
     public function setQuantity($quantity) {
         $this->quantity = $quantity;
-    }
-
-    /**
-     * @return string
-     */
-    public function getDone() {
-        return $this->done;
-    }
-
-    /**
-     * @param string $done
-     * @return void
-     */
-    public function setDone($done) {
-        $this->done = $done;
     }
 
     /**
