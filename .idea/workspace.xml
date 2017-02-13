@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8be985bf-4a81-4ac6-8006-31e6152ac7c2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Configuration/NodeTypes.yaml" afterPath="$PROJECT_DIR$/Configuration/NodeTypes.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Private/Templates/NodeTypes/ContentContainer.html" afterPath="$PROJECT_DIR$/Resources/Private/Templates/NodeTypes/ContentContainer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Private/Translations/de/NodeTypes/ContentContainer.xlf" afterPath="$PROJECT_DIR$/Resources/Private/Translations/de/NodeTypes/ContentContainer.xlf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Private/Translations/en/NodeTypes/ContentContainer.xlf" afterPath="$PROJECT_DIR$/Resources/Private/Translations/en/NodeTypes/ContentContainer.xlf" />
-    </list>
+    <list default="true" id="8be985bf-4a81-4ac6-8006-31e6152ac7c2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,8 +126,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="24" />
+    <option name="y" value="23" />
     <option name="width" value="2560" />
     <option name="height" value="1341" />
   </component>
@@ -777,15 +770,15 @@
       <workItem from="1486718913720" duration="2338000" />
       <workItem from="1486721422511" duration="2245000" />
       <workItem from="1486965564701" duration="2065000" />
-      <workItem from="1486968145881" duration="290000" />
+      <workItem from="1486968145881" duration="423000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58031000" />
+    <option name="totallyTimeSpent" value="58164000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="24" width="2560" height="1341" extended-state="6" />
+    <frame x="0" y="23" width="2560" height="1341" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13343924" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
