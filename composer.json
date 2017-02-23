@@ -1,9 +1,10 @@
 {
-    "description": "",
+    "description": "Neos CMS Newsletter Plugin",
     "type": "neos-package",
     "name": "directmail/newsletter",
     "require": {
-        "neos/flow": "*"
+        "neos/flow": "*",
+        "neos/swiftmailer": "6.0.0"
     },
     "autoload": {
         "psr-4": {
