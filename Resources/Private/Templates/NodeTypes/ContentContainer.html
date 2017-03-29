@@ -1,7 +1,32 @@
 {namespace neos=Neos\Neos\ViewHelpers}
 {namespace media=Neos\Media\ViewHelpers}
 {namespace fusion=Neos\Fusion\ViewHelpers}
-<div style="float:left; width:900px; box-sizing: border-box; <f:if condition="{contentContainerPadding}">padding:2em;</f:if> <f:if condition="{contentContainerBackground}">background:{contentContainerBackground};</f:if> <f:if condition="{contentColor}">color:{contentColor};</f:if>">
-    {content -> f:format.raw()}
-</div>
-
+<f:if condition="{contentContainerPadding}">
+    <f:then>
+        <table width="100%" border="0" cellspacing="0" cellpadding="30">
+    </f:then>
+    <f:else>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    </f:else>
+</f:if>
+    <tbody>
+        <tr>
+            <f:if condition="{contentContainerBackground}">
+                <f:then>
+                    <td bgcolor="{contentContainerBackground}">
+                </f:then>
+                <f:else>
+                    <td>
+                </f:else>
+            </f:if>
+            <f:if condition="{contentColor}">
+                <span style="color:{contentColor}">
+            </f:if>
+                {content -> f:format.raw()}
+            <f:if condition="{contentColor}">
+            </span>
+            </f:if>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -12,21 +12,38 @@
 <body>
 <f:section name="body">
     <meta name="viewport" content="width=1200, initial-scale=1, user-scalable=yes">
-    <f:if condition="{newsletterBackground}">
-        <style>
-            body { background:{newsletterBackground}; }
-        </style>
-    </f:if>
+    <style>
+        <f:if condition="{newsletterBackground}">body { background:{newsletterBackground}; }</f:if>
+    body { margin:0; padding:0; }
     <f:if condition="{linkColor}">
-        <style>
-            body a { color:{linkColor}; text-decoration:underline; }
-            body a:hover { text-decoration:none; }
-        </style>
+    body a { color:{linkColor}; text-decoration:underline; }
+    body a:hover { text-decoration:none; }
+    h1, h2 , h3, p, div { margin:0; padding:0; }
+    hr { border:0; outline:0; border-top:1px solid #CCCCCC; margin:0; padding:0; margin-top:30px; margin-bottom:30px; }
     </f:if>
-    <f:render partial="InlineCss.html" arguments="{_all}" />
-    <div style="width:900px; margin-left:auto; margin-right:auto;">
-        {content.main -> f:format.raw()}
-    </div>
+    </style>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+        <tr>
+            <f:if condition="{newsletterBackground}">
+                <f:then>
+                    <td align="center" valign="top" bgcolor="{newsletterBackground}">
+                </f:then>
+                <f:else>
+                    <td align="center" valign="top">
+                </f:else>
+            </f:if>
+                <table width="900" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                    <tr>
+                        <td align="left" valign="top">{content.main -> f:format.raw()}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 </f:section>
 </body>
 </html>

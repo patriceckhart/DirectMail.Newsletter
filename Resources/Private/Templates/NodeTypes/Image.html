@@ -1,0 +1,22 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace media=Neos\Media\ViewHelpers}
+<table width="100" border="0" align="{alignment}" cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td>
+            <f:if condition="{image}">
+                <f:then>
+                    <media:image image="{image}" width="850" allowCropping="TRUE" alt="" />
+                </f:then>
+                <f:else>
+                    <f:security.ifAccess privilegeTarget="Neos.Neos:Backend.GeneralAccess">
+                        <f:if condition="{node.context.workspace.name} != 'live'">
+                            <img src="{f:uri.resource(package: 'Neos.Neos', path: 'Images/dummy-image.svg')}" title="Dummy image" alt="Dummy image" class="neos-handle" />
+                        </f:if>
+                    </f:security.ifAccess>
+                </f:else>
+            </f:if>
+        </td>
+    </tr>
+    </tbody>
+</table>
