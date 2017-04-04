@@ -63,7 +63,7 @@
 <trans-unit id="content.deletequeue" xml:space="preserve"><source>Warteschlange aufräumen</source></trans-unit>
 
 <trans-unit id="content.queueempty" xml:space="preserve"><source>Die Warteschlange ist leer.</source></trans-unit>
-
+<trans-unit id="content.datetimelabel" xml:space="preserve"><source>Wann wird der Newsletter versandt?</source></trans-unit>
 
 		</body>
 	</file>

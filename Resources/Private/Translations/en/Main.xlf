@@ -63,6 +63,7 @@
                         <trans-unit id="content.deletequeue" xml:space="preserve"><source>Cleanup Queue</source></trans-unit>
 
                         <trans-unit id="content.queueempty" xml:space="preserve"><source>Queue empty.</source></trans-unit>
+                        <trans-unit id="content.datetimelabel" xml:space="preserve"><source>When will the newsletter be sent?</source></trans-unit>
 
 
 		</body>

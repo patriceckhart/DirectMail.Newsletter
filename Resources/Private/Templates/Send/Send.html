@@ -1,12 +1,12 @@
 <f:layout name="Default" />
 
-
 <f:section name="Content">
     Seite: {title} ({hostname}{pageUrl})
     <table class="neos-table">
         <thead>
         <tr>
             <td>{f:translate(id: 'content.categorylabel', package: 'DirectMail.Newsletter', source: 'Main')}</td>
+            <td><div class="neos-pull-right">{f:translate(id: 'content.datetimelabel', package: 'DirectMail.Newsletter', source: 'Main')}</div></td>
             <td>&nbsp;</td>
         </tr>
         </thead>
@@ -14,12 +14,17 @@
         <f:for each="{categories}" as="category">
             <f:if condition="{category.deleted}==0">
                 <f:then>
-                    <tr><td>{category.name}</td><td class="neos-action"><div class="neos-pull-right">
+                    <tr><td>{category.name}</td>
+                        <td><div class="neos-pull-right">
+                            {senddatetime}
+                        </div></td>
+                        <td class="neos-action"><div class="neos-pull-right">
                         <f:form action="finish" controller="Send" objectName="newSend">
+                            <f:form.hidden property="senddatetime" value="{senddatetime}" />
                             <f:form.hidden property="pageurl" value="{fullUrl}" />
                             <f:form.hidden property="title" value="{title}" />
                             <f:form.hidden property="category" value="<f:format.identifier>{category}</f:format.identifier>" />
-                            <button type="submit" class="neos-button neos-button-primary">{f:translate(id: 'content.sendnowlabel', package: 'DirectMail.Newsletter', source: 'Main')}</button>
+                            <button type="submit" class="neos-button neos-button-primary"><i class="icon-play-circle"></i> {f:translate(id: 'content.sendnowlabel', package: 'DirectMail.Newsletter', source: 'Main')}</button>
                         </f:form>
                     </div></td></tr>
                 </f:then>

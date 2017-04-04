@@ -23,6 +23,15 @@
 'DirectMail.Newsletter:Newsletter':
   superTypes:
     'Neos.Neos:Document': TRUE
+  ui:
+    label: 'Newsletter'
+    icon: 'icon-envelope'
+    position: 2
+    inspector:
+      groups:
+        newsletter:
+          label: 'Newsletter'
+          icon: 'icon-envelope'
   childNodes:
     'main':
       type: 'Neos.Neos:ContentCollection'
@@ -59,6 +68,16 @@
         inspector:
           group: 'document'
           position: 100
+    'dateTime':
+      type: DateTime
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'document'
+          position: 100
+          editorOptions:
+            format: 'd.m.Y H:i'
 'DirectMail.Newsletter:ContentContainer':
   superTypes:
     'Neos.Neos:Content': TRUE

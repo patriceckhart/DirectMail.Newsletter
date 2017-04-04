@@ -8,6 +8,9 @@
             <trans-unit id="properties.linkColor" xml:space="preserve">
                 <source>Linkcolor</source>
             </trans-unit>
+            <trans-unit id="properties.dateTime" xml:space="preserve">
+                                        <source>Send Date/Time</source>
+                                    </trans-unit>
 		</body>
 	</file>
 </xliff>

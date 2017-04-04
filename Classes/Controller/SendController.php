@@ -47,6 +47,9 @@ class SendController extends ActionController
 
         $pageUrl = $newSend->getPageurl();
         $title = $newSend->getTitle();
+
+        $senddatetime = $newSend->getSenddatetime();
+
         $hostname = "http://".$this->request->getHttpRequest()->getBaseUri()->getHost()."/";
         $fullUrl = $hostname.$pageUrl.".html";
 
@@ -54,7 +57,7 @@ class SendController extends ActionController
         $this->view->assign('title', $title);
         $this->view->assign('hostname', "http://".$this->request->getHttpRequest()->getBaseUri()->getHost()."/");
         $this->view->assign('fullUrl', $fullUrl);
-
+        $this->view->assign('senddatetime', $senddatetime);
     }
 
     /**
@@ -67,9 +70,7 @@ class SendController extends ActionController
 
         $category = $newSend->getCategory();
 
-        /*$classname = '\DirectMail\Newsletter\Domain\Model\Recipient';
-        $query = $this->persistenceManager->createQueryForType($classname);
-        $results = $query->matching($query->equals('category', $category))->execute();*/
+        $senddatetime = $newSend->getSenddatetime();
 
         $filterArr = array('category' => $category, 'deleted' => "0");
 
@@ -89,6 +90,8 @@ class SendController extends ActionController
         $newSend->setQuantity($recipients);
         $newSend->setSend("0");
         $newSend->setPosted("0");
+
+        $newSend->setSenddatetime($senddatetime);
 
         $this->queueRepository->add($newSend);
 

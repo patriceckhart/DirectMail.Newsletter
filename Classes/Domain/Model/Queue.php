@@ -49,6 +49,11 @@ class Queue
      */
     protected $send;
 
+    /**
+     * @var string
+     */
+    protected $senddatetime;
+
 
     /**
      * @return string
@@ -149,6 +154,21 @@ class Queue
      */
     public function setPosted($posted) {
         $this->posted = $posted;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSenddatetime() {
+        return $this->senddatetime;
+    }
+
+    /**
+     * @param string $senddatetime
+     * @return void
+     */
+    public function setSenddatetime($senddatetime) {
+        $this->senddatetime = $senddatetime;
     }
 
 }

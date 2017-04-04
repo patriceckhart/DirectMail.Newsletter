@@ -8,6 +8,7 @@
         <tr>
             <td>{f:translate(id: 'content.page', package: 'DirectMail.Newsletter', source: 'Main')}</td>
             <td>{f:translate(id: 'content.url', package: 'DirectMail.Newsletter', source: 'Main')}</td>
+            <td>{f:translate(id: 'content.datetimelabel', package: 'DirectMail.Newsletter', source: 'Main')}</td>
             <td>&nbsp;</td>
         </tr>
         </thead>
@@ -17,11 +18,13 @@
                 <tr>
                     <td>{node.properties.title}</td>
                     <td>{hostname}{node.properties.uriPathSegment}.html</td>
+                    <td><f:format.date format="d.m.Y, H:i">{node.properties.dateTime.date}</f:format.date> Uhr</td>
                     <td class="neos-action">
                         <div class="neos-pull-right">
                             <f:form action="send" objectName="newSend" controller="Send">
                                 <f:form.hidden property="pageurl" value="{node.properties.uriPathSegment}" />
                                 <f:form.hidden property="title" value="{node.properties.title}" />
+                                <f:form.hidden property="senddatetime" value="<f:format.date format='Y-m-d H:i:00'>{node.properties.dateTime.date}</f:format.date>" />
                                 <button type="submit" class="neos-button neos-button-primary"><i class="icon-ok"></i></button>
                             </f:form>
                         </div>
@@ -32,3 +35,4 @@
         </tbody>
     </table>
 </f:section>
+
