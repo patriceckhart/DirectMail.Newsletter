@@ -87,6 +87,7 @@
       constraints:
         nodeTypes:
           'DirectMail.Newsletter:Text': TRUE
+          'DirectMail.Newsletter:TextWithImage': TRUE
           'DirectMail.Newsletter:Image': TRUE
           'DirectMail.Newsletter:Divider': TRUE
           '*': FALSE
@@ -134,6 +135,19 @@
     group: 'newsletter'
     label: i18n
     icon: 'icon-file-text'
+'DirectMail.Newsletter:TextWithImage':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+    'Neos.NodeTypes:TextMixin': TRUE
+    'Neos.NodeTypes:ContentImageMixin': TRUE
+  ui:
+    group: 'newsletter'
+    label: i18n
+    icon: 'icon-picture'
+  properties:
+    alternativeText: [ ]
+    title: [ ]
+    hasCaption: [ ]
 'DirectMail.Newsletter:Image':
   superTypes:
     'Neos.Neos:Content': TRUE

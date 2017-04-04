@@ -1,0 +1,48 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace media=Neos\Media\ViewHelpers}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td>
+<div{attributes -> f:format.raw()}>
+
+<f:if condition="{image}">
+    <f:then>
+        <table border="0" align="{alignment}" cellpadding="0" cellspacing="0" <f:if condition="{alignment}==left"><f:then>style="margin-right:20px;"</f:then><f:else>style="margin-left:20px;"</f:else></f:if>>
+            <tbody>
+            <tr>
+                <td>
+        <f:if condition="{link}">
+            <f:then>
+                <a href="{link}">
+                    <media:image image="{image}" width="850" allowCropping="TRUE" alt="" />
+                </a>
+            </f:then>
+            <f:else>
+                <media:image image="{image}" width="850" allowCropping="TRUE" alt="" />
+            </f:else>
+        </f:if>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </f:then>
+    <f:else>
+        <f:if condition="{neos:rendering.inEditMode()}">
+            <img src="{f:uri.resource(package: 'Neos.Neos', path: 'Images/dummy-image.svg')}" title="Dummy image" alt="Dummy image" class="neos-handle" />
+        </f:if>
+    </f:else>
+</f:if>
+
+<f:section name="imageRendering">
+    <media:image image="{image}" alt="{alternativeText}" title="{title}" width="{width}"
+                 maximumWidth="{maximumWidth}" height="{height}" maximumHeight="{maximumHeight}"
+                 allowUpScaling="{allowUpScaling}" allowCropping="{allowCropping}" />
+</f:section>
+
+{neos:contentElement.editable(property: 'text')}
+</div>
+        </td>
+    </tr>
+    </tbody>
+</table>

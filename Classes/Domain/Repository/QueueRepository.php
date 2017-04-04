@@ -93,6 +93,9 @@ class QueueRepository extends Repository
                 $salutation = $presalutationgender.' '.$salutationgender.' '.$firstname.' '.$lastname;
 
                 $body = str_replace("{salutation}",$salutation,$file);
+                $body = str_replace("{firstname}",$firstname,$body);
+                $body = str_replace("{lastname}",$lastname,$body);
+                $body = str_replace("{gender}",$salutationgender,$body);
 
                 $subject = $title;
 
