@@ -62,10 +62,37 @@ class QueueRepository extends Repository
             $email = $result2->getEmail();
             $user = $result2->getDeleted();
 
+            $firstname = $result2->getFirstname();
+            $lastname = $result2->getLastname();
+            $gender = $result2->getGender();
+
+            $salutation1 = $this->settings['salutation1'];
+            $salutation2 = $this->settings['salutation2'];
+            $salutation3 = $this->settings['salutation3'];
+
+            $presalutation1 = $this->settings['presalutation1'];
+            $presalutation2 = $this->settings['presalutation2'];
+            $presalutation3 = $this->settings['presalutation3'];
+
+            if($gender==1) {
+                $salutationgender = $salutation1;
+                $presalutationgender = $presalutation1;
+            } else if ($gender == 2) {
+                $salutationgender = $salutation2;
+                $presalutationgender = $presalutation2;
+            } else {
+                $salutationgender = $salutation3;
+                $presalutationgender = $presalutation3;
+            }
+
             if($user=="0") {
                 $file = file_get_contents($pageurl);
                 //$body1 = preg_replace("/.*<body[^>]*>|<\/body>.*/si", "", $file);
-                $body = $file;
+                //$body = $file;
+
+                $salutation = $presalutationgender.' '.$salutationgender.' '.$firstname.' '.$lastname;
+
+                $body = str_replace("{salutation}",$salutation,$file);
 
                 $subject = $title;
 
