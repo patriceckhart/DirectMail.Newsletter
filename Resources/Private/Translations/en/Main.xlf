@@ -50,7 +50,7 @@
 
                         <trans-unit id="content.importdatalabel" xml:space="preserve"><source>Start Import</source></trans-unit>
 
-                        <trans-unit id="content.activelabel" xml:space="preserve"><source>Activ</source></trans-unit>
+                        <trans-unit id="content.activelabel" xml:space="preserve"><source>Active</source></trans-unit>
                         <trans-unit id="content.inactivelabel" xml:space="preserve"><source>Inactiv</source></trans-unit>
 
                         <trans-unit id="content.norecipientslabel" xml:space="preserve"><source>No Recipients.</source></trans-unit>
