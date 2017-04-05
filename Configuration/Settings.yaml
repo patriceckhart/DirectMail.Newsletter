@@ -65,6 +65,9 @@ Neos:
               index:
                 label: DirectMail.Newsletter:Modules:queue.buttonlabel
                 title: DirectMail.Newsletter:Modules:queue.buttonlabel
+  Flow:
+    i18n:
+      defaultLocale: de
 DirectMail:
   Newsletter:
     adminName: 'Admin Name'
