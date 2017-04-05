@@ -15,11 +15,11 @@
         <f:if condition="{link}">
             <f:then>
                 <a href="{link}">
-                    <media:image image="{image}" width="850" allowCropping="TRUE" alt="" />
+                    <media:image image="{image}" allowCropping="TRUE" alt="" />
                 </a>
             </f:then>
             <f:else>
-                <media:image image="{image}" width="850" allowCropping="TRUE" alt="" />
+                <media:image image="{image}" allowCropping="TRUE" alt="" />
             </f:else>
         </f:if>
                 </td>
@@ -33,12 +33,6 @@
         </f:if>
     </f:else>
 </f:if>
-
-<f:section name="imageRendering">
-    <media:image image="{image}" alt="{alternativeText}" title="{title}" width="{width}"
-                 maximumWidth="{maximumWidth}" height="{height}" maximumHeight="{maximumHeight}"
-                 allowUpScaling="{allowUpScaling}" allowCropping="{allowCropping}" />
-</f:section>
 
 {neos:contentElement.editable(property: 'text')}
 </div>

@@ -6,7 +6,16 @@
         <td>
             <f:if condition="{image}">
                 <f:then>
-                    <media:image image="{image}" width="850" allowCropping="TRUE" alt="" />
+                    <f:if condition="{link}">
+                        <f:then>
+                            <a href="{link}">
+                                <media:image image="{image}" allowCropping="TRUE" alt="" />
+                            </a>
+                        </f:then>
+                        <f:else>
+                            <media:image image="{image}" allowCropping="TRUE" alt="" />
+                        </f:else>
+                    </f:if>
                 </f:then>
                 <f:else>
                     <f:security.ifAccess privilegeTarget="Neos.Neos:Backend.GeneralAccess">

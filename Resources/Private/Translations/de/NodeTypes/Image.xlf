@@ -10,6 +10,7 @@
 			<trans-unit id="properties.alignment.selectBoxEditor.values.left" xml:space="preserve"><source>Links</source></trans-unit>
 			<trans-unit id="properties.alignment.selectBoxEditor.values.right" xml:space="preserve"><source>Rechts</source></trans-unit>
             <trans-unit id="properties.alignment.selectBoxEditor.values.center" xml:space="preserve"><source>Zentriert</source></trans-unit>
+            <trans-unit id="properties.link" xml:space="preserve"><source>Link</source></trans-unit>
 		</body>
 	</file>
 </xliff>
