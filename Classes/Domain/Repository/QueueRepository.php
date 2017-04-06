@@ -134,5 +134,5 @@ class QueueRepository extends Repository
         }
 
     }
-    
+
 }
