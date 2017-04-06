@@ -48,14 +48,22 @@ class QueueRepository extends Repository
         $title = $results->getTitle();
         $pageurl = $results->getPageurl();
 
-        $results->setSend("1");
-        $this->queueRepository->update($results);
-
-        $this->persistenceManager->persistAll();
+        $senddatetime = $results->getSenddatetime();
 
         $classname2 = '\DirectMail\Newsletter\Domain\Model\Recipient';
         $query2 = $this->persistenceManager->createQueryForType($classname2);
         $results2 = $query2->matching($query2->equals('category', $category))->execute();
+
+        $sdttimestamp = strtotime($senddatetime);
+        $now = time();
+        $now = intval($now);
+        $sdttimestamp = intval($sdttimestamp);
+
+        if ($now>=$sdttimestamp) {
+
+            $results->setSend("1");
+            $this->queueRepository->update($results);
+            $this->persistenceManager->persistAll();
 
 
         while ($result2 = $results2->current()) {
@@ -92,10 +100,17 @@ class QueueRepository extends Repository
 
                 $salutation = $presalutationgender.' '.$salutationgender.' '.$firstname.' '.$lastname;
 
-                $body = str_replace("{salutation}",$salutation,$file);
-                $body = str_replace("{firstname}",$firstname,$body);
-                $body = str_replace("{lastname}",$lastname,$body);
-                $body = str_replace("{gender}",$salutationgender,$body);
+                if($firstname == "" || $lastname == "") {
+                    $body = str_replace("{salutation}","",$file);
+                    $body = str_replace("{firstname}","",$body);
+                    $body = str_replace("{lastname}","",$body);
+                    $body = str_replace("{gender}","",$body);
+                } else {
+                    $body = str_replace("{salutation}",$salutation,$file);
+                    $body = str_replace("{firstname}",$firstname,$body);
+                    $body = str_replace("{lastname}",$lastname,$body);
+                    $body = str_replace("{gender}",$salutationgender,$body);
+                }
 
                 $subject = $title;
 
@@ -114,6 +129,8 @@ class QueueRepository extends Repository
             }
 
             $results2->next();
+        }
+
         }
 
     }

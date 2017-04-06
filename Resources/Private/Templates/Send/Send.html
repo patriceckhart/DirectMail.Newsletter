@@ -16,7 +16,7 @@
                 <f:then>
                     <tr><td>{category.name}</td>
                         <td><div class="neos-pull-right">
-                            {senddatetime}
+                            <f:if condition="{senddatetime}"><f:then>{senddatetime}</f:then><f:else>{f:translate(id: 'content.now', package: 'DirectMail.Newsletter', source: 'Main')}</f:else></f:if>
                         </div></td>
                         <td class="neos-action"><div class="neos-pull-right">
                         <f:form action="finish" controller="Send" objectName="newSend">

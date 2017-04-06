@@ -64,6 +64,7 @@
 
                         <trans-unit id="content.queueempty" xml:space="preserve"><source>Queue empty.</source></trans-unit>
                         <trans-unit id="content.datetimelabel" xml:space="preserve"><source>When will the newsletter be sent?</source></trans-unit>
+                        <trans-unit id="content.now" xml:space="preserve"><source>Immediately</source></trans-unit>
 
 
 		</body>

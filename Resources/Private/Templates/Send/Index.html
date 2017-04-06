@@ -18,7 +18,7 @@
                 <tr>
                     <td>{node.properties.title}</td>
                     <td>{hostname}{node.properties.uriPathSegment}.html</td>
-                    <td><f:format.date format="d.m.Y, H:i">{node.properties.dateTime.date}</f:format.date> Uhr</td>
+                    <td><f:if condition="{node.properties.dateTime.date}"><f:then><f:format.date format="d.m.Y, H:i">{node.properties.dateTime.date}</f:format.date></f:then><f:else>{f:translate(id: 'content.now', package: 'DirectMail.Newsletter', source: 'Main')}</f:else></f:if></td>
                     <td class="neos-action">
                         <div class="neos-pull-right">
                             <f:form action="send" objectName="newSend" controller="Send">
