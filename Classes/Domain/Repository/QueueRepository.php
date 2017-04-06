@@ -43,6 +43,23 @@ class QueueRepository extends Repository
         $classname = '\DirectMail\Newsletter\Domain\Model\Queue';
         $query = $this->persistenceManager->createQueryForType($classname);
         $results = $query->matching($query->equals('send', "0"))->execute()->getFirst();
+        //$results = $query->matching($query->equals('send', "0"))->execute();
+
+        /*while ($result = $results->current()) {
+
+            $resultsenddatetime = $results->getSenddatetime();
+
+            $resultsdttimestamp = strtotime($resultsenddatetime);
+            $resultnow = time();
+            $resultnow = intval($resultnow);
+            $resultsdttimestamp = intval($resultsdttimestamp);
+
+            if ($resultnow<$resultsdttimestamp) {
+
+            }
+
+            $results->next();
+        }*/
 
         $category = $results->getCategory();
         $title = $results->getTitle();
