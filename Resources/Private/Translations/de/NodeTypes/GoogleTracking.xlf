@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="DirectMail.Newsletter" source-language="de" datatype="plaintext">
+		<body>
+			<trans-unit id="ui.label" xml:space="preserve">
+				<source>Google Tracking</source>
+			</trans-unit>
+			<trans-unit id="properties.tid" xml:space="preserve"><source>Google Analytics Tracking ID</source></trans-unit>
+            <trans-unit id="properties.cid" xml:space="preserve"><source>Eine systematische Tracking-ID für den Kunden</source></trans-unit>
+            <trans-unit id="properties.cn" xml:space="preserve"><source>Kampagnenname identifiziert die Kampagne</source></trans-unit>
+		</body>
+	</file>
+</xliff>

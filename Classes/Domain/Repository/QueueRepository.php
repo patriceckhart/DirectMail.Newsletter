@@ -73,6 +73,7 @@ class QueueRepository extends Repository
                 $firstname = $result2->getFirstname();
                 $lastname = $result2->getLastname();
                 $gender = $result2->getGender();
+                $emailaddress = $result2->getEmail();
 
                 $salutation1 = $this->settings['salutation1'];
                 $salutation2 = $this->settings['salutation2'];
@@ -111,6 +112,8 @@ class QueueRepository extends Repository
                         $body = str_replace("{lastname}",$lastname,$body);
                         $body = str_replace("{gender}",$salutationgender,$body);
                     }
+
+                    $body = str_replace("{emailaddress}",$emailaddress,$body);
 
                     $subject = $title;
 
