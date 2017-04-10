@@ -90,6 +90,8 @@
           'DirectMail.Newsletter:TextWithImage': TRUE
           'DirectMail.Newsletter:Image': TRUE
           'DirectMail.Newsletter:Divider': TRUE
+          'DirectMail.Newsletter:TwoColumn': TRUE
+          'DirectMail.Newsletter:ThreeColumn': TRUE
           '*': FALSE
   ui:
     group: 'newsletter'
@@ -191,3 +193,66 @@
         inspector:
           group: 'visibility'
           editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
+'DirectMail.Newsletter:TwoColumn':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+  childNodes:
+    content1:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'DirectMail.Newsletter:Text': TRUE
+          'DirectMail.Newsletter:TextWithImage': TRUE
+          'DirectMail.Newsletter:Image': TRUE
+          'DirectMail.Newsletter:Divider': TRUE
+          '*': FALSE
+    content2:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'DirectMail.Newsletter:Text': TRUE
+          'DirectMail.Newsletter:TextWithImage': TRUE
+          'DirectMail.Newsletter:Image': TRUE
+          'DirectMail.Newsletter:Divider': TRUE
+          '*': FALSE
+  ui:
+    group: 'newsletter'
+    label: i18n
+    icon: 'icon-columns'
+    inlineEditable: TRUE
+'DirectMail.Newsletter:ThreeColumn':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+  childNodes:
+    content1:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'DirectMail.Newsletter:Text': TRUE
+          'DirectMail.Newsletter:TextWithImage': TRUE
+          'DirectMail.Newsletter:Image': TRUE
+          'DirectMail.Newsletter:Divider': TRUE
+          '*': FALSE
+    content2:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'DirectMail.Newsletter:Text': TRUE
+          'DirectMail.Newsletter:TextWithImage': TRUE
+          'DirectMail.Newsletter:Image': TRUE
+          'DirectMail.Newsletter:Divider': TRUE
+          '*': FALSE
+    content3:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'DirectMail.Newsletter:Text': TRUE
+          'DirectMail.Newsletter:TextWithImage': TRUE
+          'DirectMail.Newsletter:Image': TRUE
+          'DirectMail.Newsletter:Divider': TRUE
+          '*': FALSE
+  ui:
+    group: 'newsletter'
+    label: i18n
+    icon: 'icon-columns'
+    inlineEditable: TRUE

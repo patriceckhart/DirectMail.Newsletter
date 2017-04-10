@@ -1,0 +1,11 @@
+prototype(DirectMail.Newsletter:ThreeColumn) {
+    content1 = ContentCollection {
+        nodePath = 'content1'
+    }
+    content2 = ContentCollection {
+        nodePath = 'content2'
+    }
+    content3 = ContentCollection {
+        nodePath = 'content3'
+    }
+}

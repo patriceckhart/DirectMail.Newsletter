@@ -1,0 +1,8 @@
+prototype(DirectMail.Newsletter:TwoColumn) {
+    content1 = ContentCollection {
+        nodePath = 'content1'
+    }
+    content2 = ContentCollection {
+        nodePath = 'content2'
+    }
+}
