@@ -30,8 +30,8 @@
       <file leaf-file-name="SendController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classes/Controller/SendController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="52" column="68" lean-forward="false" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
+            <state relative-caret-position="728">
+              <caret line="67" column="26" lean-forward="false" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -176,6 +176,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="23" />
     <option name="width" value="2560" />
     <option name="height" value="1344" />
@@ -698,15 +699,15 @@
       <workItem from="1501136926440" duration="2707000" />
       <workItem from="1501139809367" duration="100000" />
       <workItem from="1501140201336" duration="743000" />
-      <workItem from="1501141519326" duration="1138000" />
+      <workItem from="1501141519326" duration="1198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94196000" />
+    <option name="totallyTimeSpent" value="94256000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1344" extended-state="6" />
+    <frame x="-1" y="23" width="2560" height="1344" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23629865" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1055,14 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Configuration/Settings.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1115">
-          <caret line="89" column="32" lean-forward="true" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/Domain/Repository/QueueRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="631">
@@ -1097,10 +1090,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Configuration/Settings.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1115">
+          <caret line="89" column="32" lean-forward="true" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/Controller/SendController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="52" column="68" lean-forward="false" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
+        <state relative-caret-position="728">
+          <caret line="67" column="26" lean-forward="false" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
           <folding />
         </state>
       </provider>

@@ -50,7 +50,7 @@ class SendController extends ActionController
      */
     public function indexAction()
     {
-        $newsletterSite = '/'.$this->settings['newsletterSite'].'/';
+        $newsletterSite = $this->settings['newsletterSite'].'/';
         $this->view->assign('nodes', $this->nodeDataRepository->findAll());
         $this->view->assign('hostname', "http://".$this->request->getHttpRequest()->getBaseUri()->getHost()."/");
         $this->view->assign('newslettersite', $newsletterSite);
@@ -65,7 +65,7 @@ class SendController extends ActionController
 
         $pageUrl = $newSend->getPageurl();
         $title = $newSend->getTitle();
-        $newsletterSite = '/'.$this->settings['newsletterSite'].'/';
+        $newsletterSite = $this->settings['newsletterSite'].'/';
         $senddatetime = $newSend->getSenddatetime();
 
         $hostname = "http://".$this->request->getHttpRequest()->getBaseUri()->getHost()."/";
