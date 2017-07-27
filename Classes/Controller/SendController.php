@@ -50,8 +50,10 @@ class SendController extends ActionController
      */
     public function indexAction()
     {
+        $newsletterSite = '/'.$this->settings['newsletterSite'].'/';
         $this->view->assign('nodes', $this->nodeDataRepository->findAll());
         $this->view->assign('hostname', "http://".$this->request->getHttpRequest()->getBaseUri()->getHost()."/");
+        $this->view->assign('newslettersite', $newsletterSite);
     }
 
     /**
