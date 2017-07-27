@@ -1,6 +1,6 @@
 'DirectMail.Newsletter:Newsletter':
   superTypes:
-    'Neos.NodeTypes:Page': TRUE
+    'Neos.Neos:Document': TRUE
   ui:
     label: 'Newsletter'
     icon: 'icon-envelope'
@@ -56,7 +56,3 @@
           position: 100
           editorOptions:
             format: 'd.m.Y H:i'
-'Neos.NodeTypes:Page':
-  constraints:
-    nodeTypes:
-      'DirectMail.Newsletter:ContentContainer': FALSE

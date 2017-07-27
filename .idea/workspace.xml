@@ -20,8 +20,8 @@
       <file leaf-file-name="NodeTypes.Page.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Configuration/NodeTypes.Page.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -146,7 +146,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
+    <option name="x" value="-2" />
     <option name="y" value="23" />
     <option name="width" value="2560" />
     <option name="height" value="1344" />
@@ -576,15 +576,15 @@
       <workItem from="1494233073807" duration="14000" />
       <workItem from="1501136926440" duration="2707000" />
       <workItem from="1501139809367" duration="100000" />
-      <workItem from="1501140201336" duration="576000" />
+      <workItem from="1501140201336" duration="676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92891000" />
+    <option name="totallyTimeSpent" value="92991000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="2560" height="1344" extended-state="6" />
+    <frame x="-2" y="23" width="2560" height="1344" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23629865" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -963,8 +963,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Configuration/NodeTypes.Page.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
