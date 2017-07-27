@@ -35,7 +35,7 @@
         label: i18n
         reloadIfChanged: TRUE
         inspector:
-          group: 'document'
+          group: 'settings'
           position: 100
     'linkColor':
       type: string
@@ -44,7 +44,7 @@
         label: i18n
         reloadIfChanged: TRUE
         inspector:
-          group: 'document'
+          group: 'settings'
           position: 100
     'dateTime':
       type: DateTime
@@ -52,7 +52,7 @@
         label: i18n
         reloadIfChanged: TRUE
         inspector:
-          group: 'document'
+          group: 'settings'
           position: 100
           editorOptions:
             format: 'd.m.Y H:i'
