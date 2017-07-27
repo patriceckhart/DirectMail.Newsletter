@@ -1,8 +1,6 @@
 namespace: Site=DirectMail.Newsletter
 include: NodeTypes/*
-Neos.Neos:Page >
 newsletter = Neos.Neos:Page {
-    head >
     head {
         metadata = Neos.Fusion:Template  {
             templatePath = 'resource://DirectMail.Newsletter/Private/Templates/Page/Newsletter.html'
@@ -15,7 +13,6 @@ newsletter = Neos.Neos:Page {
             }
         }
     }
-    body >
     body {
         templatePath = 'resource://DirectMail.Newsletter/Private/Templates/Page/Newsletter.html'
         sectionName = 'body'
