@@ -1,6 +1,5 @@
 'Neos.NodeTypes:Page':
   childNodes:
-    '*':
       constraints:
         nodeTypes:
           'DirectMail.Newsletter:*': FALSE
