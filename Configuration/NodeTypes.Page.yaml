@@ -1,7 +1,3 @@
-'Neos.NodeTypes:Page':
-  constraints:
-    nodeTypes:
-      '*': FALSE
 'DirectMail.Newsletter:Newsletter':
   superTypes:
     'Neos.Neos:Document': TRUE
@@ -60,3 +56,7 @@
           position: 100
           editorOptions:
             format: 'd.m.Y H:i'
+'Neos.NodeTypes:Page':
+  constraints:
+    nodeTypes:
+      'DirectMail.Newsletter:ContentContainer': FALSE
