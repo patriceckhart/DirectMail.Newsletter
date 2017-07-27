@@ -1,4 +1,4 @@
-prototype(DirectMail.Newsletter:TwoColumn) {
+prototype(Site:TwoColumn) {
     content1 = ContentCollection {
         nodePath = 'content1'
     }

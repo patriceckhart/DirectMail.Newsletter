@@ -2,6 +2,12 @@ namespace: Site=DirectMail.Newsletter
 include: NodeTypes/*
 newsletter = Neos.Neos:Page {
     head {
+        fundamentalMetaData >
+        fundamentalCFontAwesome >
+        fundamentalCss >
+        fundamentalBackendCss >
+        fundamentalJs >
+        fundamentalJQuery >
         metadata = Neos.Fusion:Template  {
             templatePath = 'resource://DirectMail.Newsletter/Private/Templates/Page/Newsletter.html'
             sectionName = 'metadata'
@@ -26,4 +32,6 @@ newsletter = Neos.Neos:Page {
             }
         }
     }
+    fundamentalFooterJs >
+    fundamentalScrollToTop >
 }

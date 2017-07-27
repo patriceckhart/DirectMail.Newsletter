@@ -1,5 +1,5 @@
-prototype(DirectMail.Newsletter:Subscribe) < prototype(Neos.Neos:Plugin)
-prototype(DirectMail.Newsletter:Subscribe) {
+prototype(Site:Subscribe) < prototype(Neos.Neos:Plugin)
+prototype(Site:Subscribe) {
     package = 'DirectMail.Newsletter'
     controller = 'Recipient'
     action = 'subscribe'

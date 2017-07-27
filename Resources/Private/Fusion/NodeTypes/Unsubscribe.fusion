@@ -1,5 +1,5 @@
-prototype(DirectMail.Newsletter:Unsubscribe) < prototype(Neos.Neos:Plugin)
-prototype(DirectMail.Newsletter:Unsubscribe) {
+prototype(Site:Unsubscribe) < prototype(Neos.Neos:Plugin)
+prototype(Site:Unsubscribe) {
     package = 'DirectMail.Newsletter'
     controller = 'Recipient'
     action = 'unsubscribe'

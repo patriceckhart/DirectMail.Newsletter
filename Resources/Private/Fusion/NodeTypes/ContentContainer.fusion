@@ -1,4 +1,4 @@
-prototype(DirectMail.Newsletter:ContentContainer) {
+prototype(Site:ContentContainer) {
     content = ContentCollection {
         nodePath = 'content'
     }
