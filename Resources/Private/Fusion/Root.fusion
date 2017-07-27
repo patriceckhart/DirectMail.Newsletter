@@ -1,9 +1,6 @@
 namespace: Site=DirectMail.Newsletter
 include: NodeTypes/*
-newsletter = Neos.Neos:Page {
-    head >
-    fundamentalFooterJs >
-    fundamentalScrollToTop >
+newsletter = Neos.Neos:Document {
     head {
         metadata = Neos.Fusion:Template  {
             templatePath = 'resource://DirectMail.Newsletter/Private/Templates/Page/Newsletter.html'
@@ -30,4 +27,3 @@ newsletter = Neos.Neos:Page {
         }
     }
 }
-
