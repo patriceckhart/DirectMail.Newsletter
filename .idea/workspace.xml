@@ -20,8 +20,8 @@
       <file leaf-file-name="Root.fusion" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resources/Private/Fusion/Root.fusion">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="75">
+              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -557,12 +557,12 @@
       <workItem from="1494232545469" duration="19000" />
       <workItem from="1494232687473" duration="1000" />
       <workItem from="1494233073807" duration="14000" />
-      <workItem from="1501136926440" duration="1138000" />
+      <workItem from="1501136926440" duration="1246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90646000" />
+    <option name="totallyTimeSpent" value="90754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1344" extended-state="6" />
@@ -971,8 +971,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/Private/Fusion/Root.fusion">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding />
         </state>
       </provider>
