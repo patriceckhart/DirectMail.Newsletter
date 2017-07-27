@@ -30,6 +30,22 @@ class SendController extends ActionController
     protected $queueRepository;
 
     /**
+     * @var array
+     */
+    protected $settings;
+
+    /**
+     * Inject settings
+     *
+     * @param array $settings
+     * @return void
+     */
+    public function injectSettings(array $settings) {
+        $this->settings = $settings;
+    }
+
+
+    /**
      * @return void
      */
     public function indexAction()
@@ -47,17 +63,18 @@ class SendController extends ActionController
 
         $pageUrl = $newSend->getPageurl();
         $title = $newSend->getTitle();
-
+        $newsletterSite = '/'.$this->settings['newsletterSite'].'/';
         $senddatetime = $newSend->getSenddatetime();
 
         $hostname = "http://".$this->request->getHttpRequest()->getBaseUri()->getHost()."/";
-        $fullUrl = $hostname.$pageUrl.".html";
+        $fullUrl = $hostname.$newsletterSite.$pageUrl.".html";
 
         $this->view->assign('pageUrl', $pageUrl.'.html');
         $this->view->assign('title', $title);
         $this->view->assign('hostname', "http://".$this->request->getHttpRequest()->getBaseUri()->getHost()."/");
         $this->view->assign('fullUrl', $fullUrl);
         $this->view->assign('senddatetime', $senddatetime);
+        $this->view->assign('newslettersite', $newsletterSite);
     }
 
     /**

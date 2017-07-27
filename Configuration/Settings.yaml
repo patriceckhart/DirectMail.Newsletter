@@ -87,3 +87,4 @@ DirectMail:
     presalutation1: 'Dear'
     presalutation2: 'Dear'
     presalutation3: 'Dear'
+    newsletterSite: 'newsletter'
