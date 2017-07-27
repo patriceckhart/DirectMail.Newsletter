@@ -1,6 +1,6 @@
 'DirectMail.Newsletter:Newsletter':
   superTypes:
-    'Neos.Neos:Document': TRUE
+    'Neos.Neos:Page': TRUE
   ui:
     label: 'Newsletter'
     icon: 'icon-envelope'
