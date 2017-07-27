@@ -1,3 +1,9 @@
+'Neos.NodeTypes:Page':
+  childNodes:
+    '*':
+      constraints:
+        nodeTypes:
+          'DirectMail.Newsletter:*': FALSE
 'DirectMail.Newsletter:Newsletter':
   superTypes:
     'Neos.Neos:Document': TRUE
