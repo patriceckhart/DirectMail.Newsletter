@@ -1,3 +1,4 @@
+namespace: Site=DirectMail.Newsletter
 include: NodeTypes/*
 newsletter = Page
 newsletter {
@@ -27,3 +28,4 @@ newsletter {
         }
     }
 }
+

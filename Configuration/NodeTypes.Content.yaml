@@ -1,83 +1,3 @@
-'DirectMail.Newsletter:Subscribe':
-  superTypes:
-    'Neos.Neos:Plugin': TRUE
-  ui:
-    label: i18n
-    group: 'newsletter'
-    icon: 'icon-envelope'
-  properties:
-    category:
-      type: string
-      ui:
-        label: i18n
-        reloadIfChanged: TRUE
-        inspector:
-          group: 'visibility'
-'DirectMail.Newsletter:Unsubscribe':
-  superTypes:
-    'Neos.Neos:Plugin': TRUE
-  ui:
-    label: i18n
-    group: 'newsletter'
-    icon: 'icon-envelope'
-'DirectMail.Newsletter:Newsletter':
-  superTypes:
-    'Neos.Neos:Document': TRUE
-  ui:
-    label: 'Newsletter'
-    icon: 'icon-envelope'
-    position: 2
-    inspector:
-      groups:
-        newsletter:
-          label: 'Newsletter'
-          icon: 'icon-envelope'
-  childNodes:
-    'main':
-      type: 'Neos.Neos:ContentCollection'
-      constraints:
-        nodeTypes:
-          'DirectMail.Newsletter:ContentContainer': TRUE
-          '*': FALSE
-  ui:
-    label: 'Newsletter'
-    icon: 'icon-envelope'
-    inspector:
-      groups:
-        'document':
-          label: 'Newsletter'
-  properties:
-    'layout':
-      type: string
-      defaultValue: 'newsletter'
-    'newsletterBackground':
-      type: string
-      defaultValue: '#EBEBEB'
-      ui:
-        label: i18n
-        reloadIfChanged: TRUE
-        inspector:
-          group: 'document'
-          position: 100
-    'linkColor':
-      type: string
-      defaultValue: '#222222'
-      ui:
-        label: i18n
-        reloadIfChanged: TRUE
-        inspector:
-          group: 'document'
-          position: 100
-    'dateTime':
-      type: DateTime
-      ui:
-        label: i18n
-        reloadIfChanged: TRUE
-        inspector:
-          group: 'document'
-          position: 100
-          editorOptions:
-            format: 'd.m.Y H:i'
 'DirectMail.Newsletter:ContentContainer':
   superTypes:
     'Neos.Neos:Content': TRUE
@@ -99,6 +19,11 @@
     label: i18n
     icon: 'icon-square'
     inlineEditable: TRUE
+    inspector:
+      groups:
+        settings:
+          label: DirectMail.Newsletter:Main:settings
+          icon: 'icon-cog'
   properties:
     contentContainerBackground:
       type: string
@@ -107,7 +32,7 @@
         label: i18n
         reloadIfChanged: TRUE
         inspector:
-          group: 'visibility'
+          group: 'settings'
     contentContainerPadding:
       type: boolean
       defaultValue: TRUE
@@ -115,7 +40,7 @@
         label: i18n
         reloadIfChanged: TRUE
         inspector:
-          group: 'visibility'
+          group: 'settings'
     contentColor:
       type: string
       defaultValue: '#222222'
@@ -123,7 +48,7 @@
         label: i18n
         reloadIfChanged: TRUE
         inspector:
-          group: 'visibility'
+          group: 'settings'
 'DirectMail.Newsletter:Divider':
   superTypes:
     'Neos.Neos:Content': TRUE
@@ -158,6 +83,11 @@
     group: 'newsletter'
     label: i18n
     icon: 'icon-picture'
+    inspector:
+      groups:
+        settings:
+          label: DirectMail.Newsletter:Main:settings
+          icon: 'icon-cog'
   properties:
     image:
       type: Neos\Media\Domain\Model\ImageInterface
@@ -165,7 +95,7 @@
         label: i18n
         reloadIfChanged: TRUE
         inspector:
-          group: 'visibility'
+          group: 'settings'
           editorOptions:
             features:
               resize: TRUE
@@ -175,7 +105,7 @@
         label: i18n
         reloadIfChanged: TRUE
         inspector:
-          group: 'visibility'
+          group: 'settings'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             placeholder: left
@@ -192,7 +122,7 @@
         label: i18n
         reloadIfChanged: TRUE
         inspector:
-          group: 'visibility'
+          group: 'settings'
           editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
 'DirectMail.Newsletter:TwoColumn':
   superTypes:
@@ -264,6 +194,11 @@
     group: 'newsletter'
     label: i18n
     icon: 'icon-google'
+    inspector:
+      groups:
+        settings:
+          label: DirectMail.Newsletter:Main:settings
+          icon: 'icon-cog'
   properties:
     tid:
       type: string
@@ -271,18 +206,18 @@
         label: i18n
         reloadIfChanged: TRUE
         inspector:
-          group: 'visibility'
+          group: 'settings'
     cid:
       type: string
       ui:
         label: i18n
         reloadIfChanged: TRUE
         inspector:
-          group: 'visibility'
+          group: 'settings'
     cn:
       type: string
       ui:
         label: i18n
         reloadIfChanged: TRUE
         inspector:
-          group: 'visibility'
+          group: 'settings'

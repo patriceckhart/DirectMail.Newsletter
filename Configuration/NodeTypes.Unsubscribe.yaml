@@ -1,0 +1,7 @@
+'DirectMail.Newsletter:Unsubscribe':
+  superTypes:
+    'Neos.Neos:Plugin': TRUE
+  ui:
+    label: i18n
+    group: 'newsletter'
+    icon: 'icon-envelope'

@@ -66,7 +66,9 @@
 <trans-unit id="content.datetimelabel" xml:space="preserve"><source>Wann wird der Newsletter versandt?</source></trans-unit>
 <trans-unit id="content.now" xml:space="preserve"><source>Sofort</source></trans-unit>
 <trans-unit id="content.googletrackingenabled" xml:space="preserve"><source>Google Tracking</source></trans-unit>
-
+<trans-unit id="settings" xml:space="preserve">
+				<source>Einstellungen</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
