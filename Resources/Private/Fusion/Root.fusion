@@ -1,6 +1,6 @@
 namespace: Site=DirectMail.Newsletter
 include: NodeTypes/*
-newsletter = prototype(Neos.Neos:Page)
+newsletter = Neos.Neos:Page {
 newsletter {
     head {
         metadata = Neos.Fusion:Template  {
