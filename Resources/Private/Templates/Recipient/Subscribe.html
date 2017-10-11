@@ -31,7 +31,7 @@
                 <f:form.textfield property="email" id="email" />
             </li>
             <li class="input">
-                <f:form.submit class="btn" value="{f:translate(id: 'content.subscribebutton', package: 'DirectMail.Newsletter', source: 'NodeTypes/Subscribe')}" />
+                <button type="submit" class="btn">{f:translate(id: 'content.subscribebutton', package: 'DirectMail.Newsletter', source: 'NodeTypes/Subscribe')}</button>
             </li>
             <f:form.hidden property="category" id="category" value="{category}" />
             <f:form.hidden property="deleted" id="deleted" value="0" />
